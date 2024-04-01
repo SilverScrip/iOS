@@ -1,0 +1,28 @@
+PODS:
+  - OxySDK (1.0.15.22)
+  - SwiftVideoBackground (3.4.0)
+
+DEPENDENCIES:
+  - OxySDK (from `https://github.com/SilverScrip/public.git`)
+  - SwiftVideoBackground (~> 3.0)
+
+SPEC REPOS:
+  trunk:
+    - SwiftVideoBackground
+
+EXTERNAL SOURCES:
+  OxySDK:
+    :git: https://github.com/SilverScrip/public.git
+
+CHECKOUT OPTIONS:
+  OxySDK:
+    :commit: 7c722f5c5de8181a0872f9552bba3aef2f213ada
+    :git: https://github.com/SilverScrip/public.git
+
+SPEC CHECKSUMS:
+  OxySDK: 3d2f652591a082e95c0e061574d3858486065050
+  SwiftVideoBackground: 826e0567c737ded2a211aa309e9951c643695e8f
+
+PODFILE CHECKSUM: 41595a3a0bf19834ca192675ab49542c97762c9a
+
+COCOAPODS: 1.13.0

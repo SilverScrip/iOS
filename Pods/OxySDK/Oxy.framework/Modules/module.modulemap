@@ -1,0 +1,6 @@
+framework module Oxy {
+  umbrella header "Oxy.h"
+  export *
+
+  module * { export * }
+}

@@ -1,0 +1,497 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04DA42F0A6C07D73F278E5E9 /* Pods_SwiftWhisper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A14CAA1792543982E3D2E890 /* Pods_SwiftWhisper.framework */; };
+		10605EAC2BBAC21B00E98B38 /* AudioProcessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10605EAB2BBAC21B00E98B38 /* AudioProcessing.swift */; };
+		10605EAE2BBAC22200E98B38 /* smormzout.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10605EAD2BBAC22200E98B38 /* smormzout.mp3 */; };
+		10605EB02BBACA4F00E98B38 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10605EAF2BBACA4F00E98B38 /* music.mp3 */; };
+		D9D6FB37253F111500036C21 /* install.sh in Resources */ = {isa = PBXBuildFile; fileRef = D9D6FB36253F111500036C21 /* install.sh */; };
+		DF59B99A241416CE006F7FC9 /* ToastClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF59B999241416CD006F7FC9 /* ToastClass.swift */; };
+		DFBDB38723E58F1F00A63F37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBDB38623E58F1F00A63F37 /* AppDelegate.swift */; };
+		DFBDB38923E58F1F00A63F37 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBDB38823E58F1F00A63F37 /* SceneDelegate.swift */; };
+		DFBDB38B23E58F1F00A63F37 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBDB38A23E58F1F00A63F37 /* ViewController.swift */; };
+		DFBDB38E23E58F1F00A63F37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFBDB38C23E58F1F00A63F37 /* Main.storyboard */; };
+		DFBDB39123E58F1F00A63F37 /* SwiftWhisper.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DFBDB38F23E58F1F00A63F37 /* SwiftWhisper.xcdatamodeld */; };
+		DFBDB39323E58F2200A63F37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFBDB39223E58F2200A63F37 /* Assets.xcassets */; };
+		DFBDB39623E58F2200A63F37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFBDB39423E58F2200A63F37 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D95A3E9D252A022A00B27DE9 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		10605EA52BBA249200E98B38 /* aubio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = aubio.framework; path = Pods/aubio.framework; sourceTree = "<group>"; };
+		10605EAB2BBAC21B00E98B38 /* AudioProcessing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioProcessing.swift; sourceTree = "<group>"; };
+		10605EAD2BBAC22200E98B38 /* smormzout.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = smormzout.mp3; sourceTree = "<group>"; };
+		10605EAF2BBACA4F00E98B38 /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
+		7BDA7D27978162A3C14E5882 /* Pods-SwiftWhisper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftWhisper.debug.xcconfig"; path = "Target Support Files/Pods-SwiftWhisper/Pods-SwiftWhisper.debug.xcconfig"; sourceTree = "<group>"; };
+		A14CAA1792543982E3D2E890 /* Pods_SwiftWhisper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftWhisper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9D5480EDC9670B98FF5863A /* Pods-SwiftWhisper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftWhisper.release.xcconfig"; path = "Target Support Files/Pods-SwiftWhisper/Pods-SwiftWhisper.release.xcconfig"; sourceTree = "<group>"; };
+		D9D6FB36253F111500036C21 /* install.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = install.sh; sourceTree = "<group>"; };
+		DF0D9A9E24143A8800D8E62C /* OxySound.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OxySound.entitlements; sourceTree = "<group>"; };
+		DF59B999241416CD006F7FC9 /* ToastClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastClass.swift; sourceTree = "<group>"; };
+		DFBDB38323E58F1F00A63F37 /* OxySound Basic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OxySound Basic.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFBDB38623E58F1F00A63F37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DFBDB38823E58F1F00A63F37 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DFBDB38A23E58F1F00A63F37 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DFBDB38D23E58F1F00A63F37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DFBDB39023E58F1F00A63F37 /* SwiftWhisper.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftWhisper.xcdatamodel; sourceTree = "<group>"; };
+		DFBDB39223E58F2200A63F37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DFBDB39523E58F2200A63F37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DFBDB39723E58F2200A63F37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DFBDB38023E58F1F00A63F37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04DA42F0A6C07D73F278E5E9 /* Pods_SwiftWhisper.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5AA85DCB6A777B9FF2B44F70 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7BDA7D27978162A3C14E5882 /* Pods-SwiftWhisper.debug.xcconfig */,
+				D9D5480EDC9670B98FF5863A /* Pods-SwiftWhisper.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A0171EDC7F70C9B6A75648EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A14CAA1792543982E3D2E890 /* Pods_SwiftWhisper.framework */,
+				10605EA52BBA249200E98B38 /* aubio.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DFBDB37A23E58F1F00A63F37 = {
+			isa = PBXGroup;
+			children = (
+				DFBDB38523E58F1F00A63F37 /* SwiftWhisper */,
+				DFBDB38423E58F1F00A63F37 /* Products */,
+				5AA85DCB6A777B9FF2B44F70 /* Pods */,
+				A0171EDC7F70C9B6A75648EE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DFBDB38423E58F1F00A63F37 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DFBDB38323E58F1F00A63F37 /* OxySound Basic.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DFBDB38523E58F1F00A63F37 /* SwiftWhisper */ = {
+			isa = PBXGroup;
+			children = (
+				10605EAD2BBAC22200E98B38 /* smormzout.mp3 */,
+				10605EAF2BBACA4F00E98B38 /* music.mp3 */,
+				D9D6FB36253F111500036C21 /* install.sh */,
+				DF0D9A9E24143A8800D8E62C /* OxySound.entitlements */,
+				DFBDB38623E58F1F00A63F37 /* AppDelegate.swift */,
+				DFBDB38823E58F1F00A63F37 /* SceneDelegate.swift */,
+				DFBDB38A23E58F1F00A63F37 /* ViewController.swift */,
+				10605EAB2BBAC21B00E98B38 /* AudioProcessing.swift */,
+				DF59B999241416CD006F7FC9 /* ToastClass.swift */,
+				DFBDB38C23E58F1F00A63F37 /* Main.storyboard */,
+				DFBDB39223E58F2200A63F37 /* Assets.xcassets */,
+				DFBDB39423E58F2200A63F37 /* LaunchScreen.storyboard */,
+				DFBDB39723E58F2200A63F37 /* Info.plist */,
+				DFBDB38F23E58F1F00A63F37 /* SwiftWhisper.xcdatamodeld */,
+			);
+			path = SwiftWhisper;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DFBDB38223E58F1F00A63F37 /* SwiftWhisper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFBDB39A23E58F2300A63F37 /* Build configuration list for PBXNativeTarget "SwiftWhisper" */;
+			buildPhases = (
+				C8C99E711CE6C3D059607685 /* [CP] Check Pods Manifest.lock */,
+				DFBDB37F23E58F1F00A63F37 /* Sources */,
+				DFBDB38023E58F1F00A63F37 /* Frameworks */,
+				DFBDB38123E58F1F00A63F37 /* Resources */,
+				BD379B89A1288A896F2F946A /* [CP] Embed Pods Frameworks */,
+				D95A3E9D252A022A00B27DE9 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftWhisper;
+			productName = SwiftWhisper;
+			productReference = DFBDB38323E58F1F00A63F37 /* OxySound Basic.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DFBDB37B23E58F1F00A63F37 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				ORGANIZATIONNAME = OxyCom;
+				TargetAttributes = {
+					DFBDB38223E58F1F00A63F37 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = DFBDB37E23E58F1F00A63F37 /* Build configuration list for PBXProject "SwiftWhisper" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DFBDB37A23E58F1F00A63F37;
+			productRefGroup = DFBDB38423E58F1F00A63F37 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DFBDB38223E58F1F00A63F37 /* SwiftWhisper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DFBDB38123E58F1F00A63F37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFBDB39623E58F2200A63F37 /* LaunchScreen.storyboard in Resources */,
+				10605EAE2BBAC22200E98B38 /* smormzout.mp3 in Resources */,
+				DFBDB39323E58F2200A63F37 /* Assets.xcassets in Resources */,
+				DFBDB38E23E58F1F00A63F37 /* Main.storyboard in Resources */,
+				10605EB02BBACA4F00E98B38 /* music.mp3 in Resources */,
+				D9D6FB37253F111500036C21 /* install.sh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BD379B89A1288A896F2F946A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftWhisper/Pods-SwiftWhisper-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftWhisper/Pods-SwiftWhisper-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftWhisper/Pods-SwiftWhisper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8C99E711CE6C3D059607685 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftWhisper-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DFBDB37F23E58F1F00A63F37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFBDB39123E58F1F00A63F37 /* SwiftWhisper.xcdatamodeld in Sources */,
+				10605EAC2BBAC21B00E98B38 /* AudioProcessing.swift in Sources */,
+				DF59B99A241416CE006F7FC9 /* ToastClass.swift in Sources */,
+				DFBDB38B23E58F1F00A63F37 /* ViewController.swift in Sources */,
+				DFBDB38723E58F1F00A63F37 /* AppDelegate.swift in Sources */,
+				DFBDB38923E58F1F00A63F37 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DFBDB38C23E58F1F00A63F37 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DFBDB38D23E58F1F00A63F37 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DFBDB39423E58F2200A63F37 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DFBDB39523E58F2200A63F37 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DFBDB39823E58F2200A63F37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DFBDB39923E58F2200A63F37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DFBDB39B23E58F2300A63F37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BDA7D27978162A3C14E5882 /* Pods-SwiftWhisper.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_USE_OPTIMIZATION_PROFILE = YES;
+				CODE_SIGN_ENTITLEMENTS = SwiftWhisper/OxySound.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = UZ7A5NQ3W2;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/SwiftWhisper",
+					"$(PROJECT_DIR)/Pods",
+				);
+				INFOPLIST_FILE = SwiftWhisper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = org.askquickly.oxyapp;
+				PRODUCT_NAME = "OxySound Basic";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DFBDB39C23E58F2300A63F37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9D5480EDC9670B98FF5863A /* Pods-SwiftWhisper.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_USE_OPTIMIZATION_PROFILE = YES;
+				CODE_SIGN_ENTITLEMENTS = SwiftWhisper/OxySound.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = UZ7A5NQ3W2;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/SwiftWhisper",
+					"$(PROJECT_DIR)/Pods",
+				);
+				INFOPLIST_FILE = SwiftWhisper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oxysound.events;
+				PRODUCT_NAME = "OxySound Basic";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DFBDB37E23E58F1F00A63F37 /* Build configuration list for PBXProject "SwiftWhisper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFBDB39823E58F2200A63F37 /* Debug */,
+				DFBDB39923E58F2200A63F37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFBDB39A23E58F2300A63F37 /* Build configuration list for PBXNativeTarget "SwiftWhisper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFBDB39B23E58F2300A63F37 /* Debug */,
+				DFBDB39C23E58F2300A63F37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DFBDB38F23E58F1F00A63F37 /* SwiftWhisper.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DFBDB39023E58F1F00A63F37 /* SwiftWhisper.xcdatamodel */,
+			);
+			currentVersion = DFBDB39023E58F1F00A63F37 /* SwiftWhisper.xcdatamodel */;
+			path = SwiftWhisper.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DFBDB37B23E58F1F00A63F37 /* Project object */;
+}

@@ -1,0 +1,32 @@
+{
+  "name": "OxySDK",
+  "version": "1.0.15.22",
+  "summary": "Send data over sound",
+  "homepage": "https://oxycom.co.uk",
+  "license": {
+    "type": "Commercial",
+    "text": "                    Copyright (C) 2020 OxySound\n                    Permission is hereby granted to use this framework as is, modifications are not allowed.\n                    All rights reserved.\n      \t\t\t\tTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\n      \t\t\t\tIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\n      \t\t\t\tFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\n      \t\t\t\tAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\n      \t\t\t\tLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\n      \t\t\t\tOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\n      \t\t\t\tTHE SOFTWARE.\n"
+  },
+  "authors": {
+    "Oxy": "support@oxycom.co.uk"
+  },
+  "platforms": {
+    "ios": "11.0"
+  },
+  "source": {
+    "git": "https://github.com/OxySound/OxySDK.git",
+    "tag": "1.0.15.22"
+  },
+  "source_files": "Oxy.framework/**/*.{h}",
+  "module_map": "Oxy.framework/Modules/module.modulemap",
+  "preserve_paths": "Oxy.framework",
+  "vendored_frameworks": "Oxy.framework",
+  "pod_target_xcconfig": {
+    "SWIFT_VERSION": "4.0"
+  },
+  "frameworks": [
+    "CoreTelephony",
+    "Oxy"
+  ],
+  "requires_arc": true
+}

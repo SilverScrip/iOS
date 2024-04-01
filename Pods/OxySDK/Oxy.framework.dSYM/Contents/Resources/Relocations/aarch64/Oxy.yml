@@ -1,0 +1,392 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/mbp/Downloads/iOS-SDK_release-master/alpha/build/Release-iphoneos/Oxy.framework/Oxy'
+relocations:
+  - { offsetInCU: 0x34, offset: 0x5DDC9, size: 0x8, addend: 0x0, symName: _OxyVersionString, symObjAddr: 0x0, symBinAddr: 0x21950, symSize: 0x0 }
+  - { offsetInCU: 0x69, offset: 0x5DDFE, size: 0x8, addend: 0x0, symName: _OxyVersionNumber, symObjAddr: 0x20, symBinAddr: 0x21970, symSize: 0x0 }
+  - { offsetInCU: 0x27, offset: 0x5DE3B, size: 0x8, addend: 0x0, symName: _checkStatus, symObjAddr: 0x0, symBinAddr: 0x8000, symSize: 0x2C }
+  - { offsetInCU: 0x4F, offset: 0x5DE63, size: 0x8, addend: 0x0, symName: _iosAudio, symObjAddr: 0x4B70, symBinAddr: 0x259C0, symSize: 0x0 }
+  - { offsetInCU: 0x1EF, offset: 0x5E003, size: 0x8, addend: 0x0, symName: _checkStatus, symObjAddr: 0x0, symBinAddr: 0x8000, symSize: 0x2C }
+  - { offsetInCU: 0x224, offset: 0x5E038, size: 0x8, addend: 0x0, symName: '-[IosAudioController init]', symObjAddr: 0x2C, symBinAddr: 0x802C, symSize: 0x1D8 }
+  - { offsetInCU: 0x5D5, offset: 0x5E3E9, size: 0x8, addend: 0x0, symName: _recordingCallback, symObjAddr: 0x204, symBinAddr: 0x8204, symSize: 0x2A8 }
+  - { offsetInCU: 0x7CB, offset: 0x5E5DF, size: 0x8, addend: 0x0, symName: _playbackCallback, symObjAddr: 0x4AC, symBinAddr: 0x84AC, symSize: 0x1F8 }
+  - { offsetInCU: 0x930, offset: 0x5E744, size: 0x8, addend: 0x0, symName: '-[IosAudioController start]', symObjAddr: 0x6A4, symBinAddr: 0x86A4, symSize: 0x3C }
+  - { offsetInCU: 0x9AE, offset: 0x5E7C2, size: 0x8, addend: 0x0, symName: '-[IosAudioController stop]', symObjAddr: 0x6E0, symBinAddr: 0x86E0, symSize: 0x3C }
+  - { offsetInCU: 0xA2C, offset: 0x5E840, size: 0x8, addend: 0x0, symName: '-[IosAudioController processAudio:]', symObjAddr: 0x71C, symBinAddr: 0x871C, symSize: 0x5C }
+  - { offsetInCU: 0xA82, offset: 0x5E896, size: 0x8, addend: 0x0, symName: '-[IosAudioController dealloc]', symObjAddr: 0x778, symBinAddr: 0x8778, symSize: 0x50 }
+  - { offsetInCU: 0xAD7, offset: 0x5E8EB, size: 0x8, addend: 0x0, symName: '-[IosAudioController setOxyObject:]', symObjAddr: 0x7C8, symBinAddr: 0x87C8, symSize: 0xC }
+  - { offsetInCU: 0xB1C, offset: 0x5E930, size: 0x8, addend: 0x0, symName: '-[IosAudioController setListenCallback:withSelector:]', symObjAddr: 0x7D4, symBinAddr: 0x87D4, symSize: 0x30 }
+  - { offsetInCU: 0xB72, offset: 0x5E986, size: 0x8, addend: 0x0, symName: '-[IosAudioController audioUnit]', symObjAddr: 0x804, symBinAddr: 0x8804, symSize: 0x8 }
+  - { offsetInCU: 0xBA9, offset: 0x5E9BD, size: 0x8, addend: 0x0, symName: '-[IosAudioController tempBuffer]', symObjAddr: 0x80C, symBinAddr: 0x880C, symSize: 0x34 }
+  - { offsetInCU: 0xBE0, offset: 0x5E9F4, size: 0x8, addend: 0x0, symName: '-[IosAudioController .cxx_destruct]', symObjAddr: 0x840, symBinAddr: 0x8840, symSize: 0x30 }
+  - { offsetInCU: 0x27, offset: 0x5EA6C, size: 0x8, addend: 0x0, symName: '+[Oxy instance]', symObjAddr: 0x0, symBinAddr: 0x8870, symSize: 0x84 }
+  - { offsetInCU: 0x35, offset: 0x5EA7A, size: 0x8, addend: 0x0, symName: '+[Oxy instance]', symObjAddr: 0x0, symBinAddr: 0x8870, symSize: 0x84 }
+  - { offsetInCU: 0x5F, offset: 0x5EAA4, size: 0x8, addend: 0x0, symName: __MergedGlobals, symObjAddr: 0x45A0, symBinAddr: 0x259D0, symSize: 0x0 }
+  - { offsetInCU: 0x75, offset: 0x5EABA, size: 0x8, addend: 0x0, symName: __MergedGlobals, symObjAddr: 0x45A0, symBinAddr: 0x259D0, symSize: 0x0 }
+  - { offsetInCU: 0x283, offset: 0x5ECC8, size: 0x8, addend: 0x0, symName: '___15+[Oxy instance]_block_invoke', symObjAddr: 0x84, symBinAddr: 0x88F4, symSize: 0x2C }
+  - { offsetInCU: 0x2C2, offset: 0x5ED07, size: 0x8, addend: 0x0, symName: '-[Oxy init]', symObjAddr: 0xB0, symBinAddr: 0x8920, symSize: 0x4C }
+  - { offsetInCU: 0x2F9, offset: 0x5ED3E, size: 0x8, addend: 0x0, symName: '-[Oxy hasPermissionToInitialize]', symObjAddr: 0xFC, symBinAddr: 0x896C, symSize: 0x5C }
+  - { offsetInCU: 0x340, offset: 0x5ED85, size: 0x8, addend: 0x0, symName: '-[Oxy play:withType:]', symObjAddr: 0x158, symBinAddr: 0x89C8, symSize: 0x8 }
+  - { offsetInCU: 0x38F, offset: 0x5EDD4, size: 0x8, addend: 0x0, symName: '-[Oxy setCustomAudio:]', symObjAddr: 0x160, symBinAddr: 0x89D0, symSize: 0x8 }
+  - { offsetInCU: 0x3D4, offset: 0x5EE19, size: 0x8, addend: 0x0, symName: '-[Oxy setCustomBaseFreq:withSeparation:]', symObjAddr: 0x168, symBinAddr: 0x89D8, symSize: 0x8 }
+  - { offsetInCU: 0x428, offset: 0x5EE6D, size: 0x8, addend: 0x0, symName: '-[Oxy TimeStamp]', symObjAddr: 0x170, symBinAddr: 0x89E0, symSize: 0x8 }
+  - { offsetInCU: 0x45F, offset: 0x5EEA4, size: 0x8, addend: 0x0, symName: '-[Oxy ConfidenceNoise]', symObjAddr: 0x178, symBinAddr: 0x89E8, symSize: 0x2C }
+  - { offsetInCU: 0x496, offset: 0x5EEDB, size: 0x8, addend: 0x0, symName: '-[Oxy ConfidenceError]', symObjAddr: 0x1A4, symBinAddr: 0x8A14, symSize: 0x2C }
+  - { offsetInCU: 0x4CD, offset: 0x5EF12, size: 0x8, addend: 0x0, symName: '-[Oxy DistanceVol]', symObjAddr: 0x1D0, symBinAddr: 0x8A40, symSize: 0x2C }
+  - { offsetInCU: 0x504, offset: 0x5EF49, size: 0x8, addend: 0x0, symName: '-[Oxy listen]', symObjAddr: 0x1FC, symBinAddr: 0x8A6C, symSize: 0x2C }
+  - { offsetInCU: 0x537, offset: 0x5EF7C, size: 0x8, addend: 0x0, symName: '-[Oxy configure:withMode:]', symObjAddr: 0x228, symBinAddr: 0x8A98, symSize: 0x8 }
+  - { offsetInCU: 0x586, offset: 0x5EFCB, size: 0x8, addend: 0x0, symName: '-[Oxy stop]', symObjAddr: 0x230, symBinAddr: 0x8AA0, symSize: 0x2C }
+  - { offsetInCU: 0x5B9, offset: 0x5EFFE, size: 0x8, addend: 0x0, symName: '-[Oxy onOxy:]', symObjAddr: 0x25C, symBinAddr: 0x8ACC, symSize: 0x18C }
+  - { offsetInCU: 0x648, offset: 0x5F08D, size: 0x8, addend: 0x0, symName: '-[Oxy dealloc]', symObjAddr: 0x3E8, symBinAddr: 0x8C58, symSize: 0x34 }
+  - { offsetInCU: 0x67B, offset: 0x5F0C0, size: 0x8, addend: 0x0, symName: '-[Oxy delegate]', symObjAddr: 0x41C, symBinAddr: 0x8C8C, symSize: 0x18 }
+  - { offsetInCU: 0x6B2, offset: 0x5F0F7, size: 0x8, addend: 0x0, symName: '-[Oxy setDelegate:]', symObjAddr: 0x434, symBinAddr: 0x8CA4, symSize: 0xC }
+  - { offsetInCU: 0x6F3, offset: 0x5F138, size: 0x8, addend: 0x0, symName: '-[Oxy .cxx_destruct]', symObjAddr: 0x440, symBinAddr: 0x8CB0, symSize: 0x2C }
+  - { offsetInCU: 0x27, offset: 0x5F23A, size: 0x8, addend: 0x0, symName: '-[OxyCore init:]', symObjAddr: 0x0, symBinAddr: 0x8CDC, symSize: 0x68 }
+  - { offsetInCU: 0x16E, offset: 0x5F381, size: 0x8, addend: 0x0, symName: '-[OxyCore init:]', symObjAddr: 0x0, symBinAddr: 0x8CDC, symSize: 0x68 }
+  - { offsetInCU: 0x1B5, offset: 0x5F3C8, size: 0x8, addend: 0x0, symName: '-[OxyCore setCustomAudio:]', symObjAddr: 0x68, symBinAddr: 0x8D44, symSize: 0x230 }
+  - { offsetInCU: 0x488, offset: 0x5F69B, size: 0x8, addend: 0x0, symName: '-[OxyCore configure:withMode:]', symObjAddr: 0x298, symBinAddr: 0x8F74, symSize: 0xFC }
+  - { offsetInCU: 0x513, offset: 0x5F726, size: 0x8, addend: 0x0, symName: '-[OxyCore setCustomBaseFreq:withOxysSeparation:]', symObjAddr: 0x394, symBinAddr: 0x9070, symSize: 0xC }
+  - { offsetInCU: 0x5A6, offset: 0x5F7B9, size: 0x8, addend: 0x0, symName: '-[OxyCore startOxyListen]', symObjAddr: 0x3A0, symBinAddr: 0x907C, symSize: 0x40 }
+  - { offsetInCU: 0x5D9, offset: 0x5F7EC, size: 0x8, addend: 0x0, symName: '-[OxyCore stopOxyListen]', symObjAddr: 0x3E0, symBinAddr: 0x90BC, symSize: 0x14 }
+  - { offsetInCU: 0x60C, offset: 0x5F81F, size: 0x8, addend: 0x0, symName: '-[OxyCore playOxy:withType:]', symObjAddr: 0x3F4, symBinAddr: 0x90D0, symSize: 0x6C }
+  - { offsetInCU: 0x6CD, offset: 0x5F8E0, size: 0x8, addend: 0x0, symName: '-[OxyCore getDecodedString]', symObjAddr: 0x460, symBinAddr: 0x913C, symSize: 0x8 }
+  - { offsetInCU: 0x704, offset: 0x5F917, size: 0x8, addend: 0x0, symName: '-[OxyCore getDecodedKey]', symObjAddr: 0x468, symBinAddr: 0x9144, symSize: 0xC }
+  - { offsetInCU: 0x73B, offset: 0x5F94E, size: 0x8, addend: 0x0, symName: '+[OxyCore charToVal:]', symObjAddr: 0x474, symBinAddr: 0x9150, symSize: 0x28 }
+  - { offsetInCU: 0x787, offset: 0x5F99A, size: 0x8, addend: 0x0, symName: '+[OxyCore charToVal:]', symObjAddr: 0x474, symBinAddr: 0x9150, symSize: 0x28 }
+  - { offsetInCU: 0x7A4, offset: 0x5F9B7, size: 0x8, addend: 0x0, symName: '+[OxyCore fromBaseToDec:withLength:withBase:]', symObjAddr: 0x49C, symBinAddr: 0x9178, symSize: 0x90 }
+  - { offsetInCU: 0x86D, offset: 0x5FA80, size: 0x8, addend: 0x0, symName: '-[OxyCore getDecodedTimeStamp]', symObjAddr: 0x52C, symBinAddr: 0x9208, symSize: 0x60 }
+  - { offsetInCU: 0x8D8, offset: 0x5FAEB, size: 0x8, addend: 0x0, symName: '-[OxyCore getVersionCoreLib]', symObjAddr: 0x58C, symBinAddr: 0x9268, symSize: 0x2C }
+  - { offsetInCU: 0x90C, offset: 0x5FB1F, size: 0x8, addend: 0x0, symName: '-[OxyCore getVersionCoreFramework]', symObjAddr: 0x5B8, symBinAddr: 0x9294, symSize: 0xC }
+  - { offsetInCU: 0x940, offset: 0x5FB53, size: 0x8, addend: 0x0, symName: '-[OxyCore getConfidence]', symObjAddr: 0x5C4, symBinAddr: 0x92A0, symSize: 0x8 }
+  - { offsetInCU: 0x998, offset: 0x5FBAB, size: 0x8, addend: 0x0, symName: '-[OxyCore getConfidenceError]', symObjAddr: 0x5CC, symBinAddr: 0x92A8, symSize: 0x8 }
+  - { offsetInCU: 0x9F0, offset: 0x5FC03, size: 0x8, addend: 0x0, symName: '-[OxyCore getConfidenceNoise]', symObjAddr: 0x5D4, symBinAddr: 0x92B0, symSize: 0x8 }
+  - { offsetInCU: 0xA48, offset: 0x5FC5B, size: 0x8, addend: 0x0, symName: '-[OxyCore getReceivedOxysVolume]', symObjAddr: 0x5DC, symBinAddr: 0x92B8, symSize: 0x8 }
+  - { offsetInCU: 0xAA0, offset: 0x5FCB3, size: 0x8, addend: 0x0, symName: '-[OxyCore getDecodingBeginFreq]', symObjAddr: 0x5E4, symBinAddr: 0x92C0, symSize: 0x8 }
+  - { offsetInCU: 0xAF8, offset: 0x5FD0B, size: 0x8, addend: 0x0, symName: '-[OxyCore getDecodingEndFreq]', symObjAddr: 0x5EC, symBinAddr: 0x92C8, symSize: 0x8 }
+  - { offsetInCU: 0xB50, offset: 0x5FD63, size: 0x8, addend: 0x0, symName: '-[OxyCore getDecodedMode]', symObjAddr: 0x5F4, symBinAddr: 0x92D0, symSize: 0x8 }
+  - { offsetInCU: 0xBA8, offset: 0x5FDBB, size: 0x8, addend: 0x0, symName: '-[OxyCore dealloc]', symObjAddr: 0x5FC, symBinAddr: 0x92D8, symSize: 0x58 }
+  - { offsetInCU: 0xBF8, offset: 0x5FE0B, size: 0x8, addend: 0x0, symName: '-[OxyCore .cxx_destruct]', symObjAddr: 0x654, symBinAddr: 0x9330, symSize: 0xC }
+  - { offsetInCU: 0x26, offset: 0x5FEC3, size: 0x8, addend: 0x0, symName: __ZN3OXY7DecoderC2Efiiii, symObjAddr: 0x0, symBinAddr: 0x933C, symSize: 0x448 }
+  - { offsetInCU: 0x592A, offset: 0x657C7, size: 0x8, addend: 0x0, symName: __ZN3OXY7DecoderC2Efiiii, symObjAddr: 0x0, symBinAddr: 0x933C, symSize: 0x448 }
+  - { offsetInCU: 0x5D9B, offset: 0x65C38, size: 0x8, addend: 0x0, symName: __ZN3OXY7DecoderC1Efiiii, symObjAddr: 0x448, symBinAddr: 0x9784, symSize: 0x4 }
+  - { offsetInCU: 0x5E19, offset: 0x65CB6, size: 0x8, addend: 0x0, symName: __ZN3OXY7DecoderC1Efiiii, symObjAddr: 0x448, symBinAddr: 0x9784, symSize: 0x4 }
+  - { offsetInCU: 0x5E57, offset: 0x65CF4, size: 0x8, addend: 0x0, symName: __ZN3OXY7DecoderD2Ev, symObjAddr: 0x44C, symBinAddr: 0x9788, symSize: 0x218 }
+  - { offsetInCU: 0x64B2, offset: 0x6634F, size: 0x8, addend: 0x0, symName: __ZN3OXY7DecoderD1Ev, symObjAddr: 0x664, symBinAddr: 0x99A0, symSize: 0x4 }
+  - { offsetInCU: 0x64E0, offset: 0x6637D, size: 0x8, addend: 0x0, symName: __ZN3OXY7DecoderD1Ev, symObjAddr: 0x664, symBinAddr: 0x99A0, symSize: 0x4 }
+  - { offsetInCU: 0x64F4, offset: 0x66391, size: 0x8, addend: 0x0, symName: __ZN3OXY7Decoder32getSizeFilledFrameCircularBufferEv, symObjAddr: 0x668, symBinAddr: 0x99A4, symSize: 0x20 }
+  - { offsetInCU: 0x652D, offset: 0x663CA, size: 0x8, addend: 0x0, symName: __ZN3OXY7Decoder32getSizeFilledBlockCircularBufferEv, symObjAddr: 0x688, symBinAddr: 0x99C4, symSize: 0x1C }
+  - { offsetInCU: 0x6566, offset: 0x66403, size: 0x8, addend: 0x0, symName: __ZN3OXY7Decoder32getSizeFilledBlockCircularBufferEi, symObjAddr: 0x6A4, symBinAddr: 0x99E0, symSize: 0x24 }
+  - { offsetInCU: 0x65AD, offset: 0x6644A, size: 0x8, addend: 0x0, symName: __ZN3OXY7Decoder17DecodeAudioBufferEPfi, symObjAddr: 0x6C8, symBinAddr: 0x9A04, symSize: 0x8 }
+  - { offsetInCU: 0x65EA, offset: 0x66487, size: 0x8, addend: 0x0, symName: __ZN3OXY7Decoder14GetDecodedDataEPc, symObjAddr: 0x6D0, symBinAddr: 0x9A0C, symSize: 0x8 }
+  - { offsetInCU: 0x661B, offset: 0x664B8, size: 0x8, addend: 0x0, symName: __ZN3OXY7Decoder18GetConfidenceErrorEv, symObjAddr: 0x6D8, symBinAddr: 0x9A14, symSize: 0x8 }
+  - { offsetInCU: 0x6642, offset: 0x664DF, size: 0x8, addend: 0x0, symName: __ZN3OXY7Decoder18GetConfidenceNoiseEv, symObjAddr: 0x6E0, symBinAddr: 0x9A1C, symSize: 0x8 }
+  - { offsetInCU: 0x6669, offset: 0x66506, size: 0x8, addend: 0x0, symName: __ZN3OXY7Decoder13GetConfidenceEv, symObjAddr: 0x6E8, symBinAddr: 0x9A24, symSize: 0x3C }
+  - { offsetInCU: 0x66C2, offset: 0x6655F, size: 0x8, addend: 0x0, symName: __ZN3OXY7Decoder21GetReceivedOxysVolumeEv, symObjAddr: 0x724, symBinAddr: 0x9A60, symSize: 0x20 }
+  - { offsetInCU: 0x670D, offset: 0x665AA, size: 0x8, addend: 0x0, symName: __ZN3OXY7Decoder14GetDecodedModeEv, symObjAddr: 0x744, symBinAddr: 0x9A80, symSize: 0x8 }
+  - { offsetInCU: 0x6737, offset: 0x665D4, size: 0x8, addend: 0x0, symName: __ZN3OXY7Decoder20GetDecodingBeginFreqEv, symObjAddr: 0x74C, symBinAddr: 0x9A88, symSize: 0x8 }
+  - { offsetInCU: 0x675D, offset: 0x665FA, size: 0x8, addend: 0x0, symName: __ZN3OXY7Decoder18GetDecodingEndFreqEv, symObjAddr: 0x754, symBinAddr: 0x9A90, symSize: 0x8 }
+  - { offsetInCU: 0x6783, offset: 0x66620, size: 0x8, addend: 0x0, symName: __ZN3OXY7Decoder11GetSpectrumEPf, symObjAddr: 0x75C, symBinAddr: 0x9A98, symSize: 0x58 }
+  - { offsetInCU: 0x67BE, offset: 0x6665B, size: 0x8, addend: 0x0, symName: __ZN3OXY7Decoder18AnalyzeStartTokensEPf, symObjAddr: 0x7B4, symBinAddr: 0x9AF0, symSize: 0x8 }
+  - { offsetInCU: 0x67F1, offset: 0x6668E, size: 0x8, addend: 0x0, symName: __ZN3OXY7Decoder12AnalyzeTokenEPf, symObjAddr: 0x7BC, symBinAddr: 0x9AF8, symSize: 0x8 }
+  - { offsetInCU: 0x6824, offset: 0x666C1, size: 0x8, addend: 0x0, symName: __ZN3OXY7Decoder23ComputeStatsStartTokensEv, symObjAddr: 0x7C4, symBinAddr: 0x9B00, symSize: 0x8 }
+  - { offsetInCU: 0x684A, offset: 0x666E7, size: 0x8, addend: 0x0, symName: __ZN3OXY7Decoder12ComputeStatsEv, symObjAddr: 0x7CC, symBinAddr: 0x9B08, symSize: 0x8 }
+  - { offsetInCU: 0x6870, offset: 0x6670D, size: 0x8, addend: 0x0, symName: __ZN3OXY7Decoder13DeReverbTokenEiPi, symObjAddr: 0x7D4, symBinAddr: 0x9B10, symSize: 0x8 }
+  - { offsetInCU: 0x68B0, offset: 0x6674D, size: 0x8, addend: 0x0, symName: __ZN3OXY7Decoder32ComputeBlockMagSpecSumsLastTokenEiiiRNSt3__16vectorIfNS1_9allocatorIfEEEE, symObjAddr: 0x7DC, symBinAddr: 0x9B18, symSize: 0x8 }
+  - { offsetInCU: 0x690A, offset: 0x667A7, size: 0x8, addend: 0x0, symName: __ZN3OXY7Decoder35ComputeBlockMagSpecSumsCurrentTokenEiiiRNSt3__16vectorIfNS1_9allocatorIfEEEE, symObjAddr: 0x7E4, symBinAddr: 0x9B20, symSize: 0x8 }
+  - { offsetInCU: 0x3EFB, offset: 0x6A701, size: 0x8, addend: 0x0, symName: __ZNSt3__1L20__throw_length_errorEPKc, symObjAddr: 0x235C, symBinAddr: 0xBE84, symSize: 0x4C }
+  - { offsetInCU: 0x5774, offset: 0x6BF7A, size: 0x8, addend: 0x0, symName: __ZN3OXY19DecoderAllMultiToneC2Efii, symObjAddr: 0x0, symBinAddr: 0x9B28, symSize: 0x58C }
+  - { offsetInCU: 0x5950, offset: 0x6C156, size: 0x8, addend: 0x0, symName: __ZN3OXY19DecoderAllMultiToneC1Efii, symObjAddr: 0x598, symBinAddr: 0xA0C0, symSize: 0x4 }
+  - { offsetInCU: 0x59AE, offset: 0x6C1B4, size: 0x8, addend: 0x0, symName: __ZN3OXY19DecoderAllMultiToneC1Efii, symObjAddr: 0x598, symBinAddr: 0xA0C0, symSize: 0x4 }
+  - { offsetInCU: 0x59DC, offset: 0x6C1E2, size: 0x8, addend: 0x0, symName: __ZN3OXY19DecoderAllMultiToneD2Ev, symObjAddr: 0x59C, symBinAddr: 0xA0C4, symSize: 0x278 }
+  - { offsetInCU: 0x5A6D, offset: 0x6C273, size: 0x8, addend: 0x0, symName: __ZN3OXY19DecoderAllMultiToneD1Ev, symObjAddr: 0x814, symBinAddr: 0xA33C, symSize: 0x4 }
+  - { offsetInCU: 0x5A9B, offset: 0x6C2A1, size: 0x8, addend: 0x0, symName: __ZN3OXY19DecoderAllMultiToneD1Ev, symObjAddr: 0x814, symBinAddr: 0xA33C, symSize: 0x4 }
+  - { offsetInCU: 0x5AAF, offset: 0x6C2B5, size: 0x8, addend: 0x0, symName: __ZN3OXY19DecoderAllMultiTone32getSizeFilledFrameCircularBufferEv, symObjAddr: 0x818, symBinAddr: 0xA340, symSize: 0x4 }
+  - { offsetInCU: 0x5AD2, offset: 0x6C2D8, size: 0x8, addend: 0x0, symName: __ZN3OXY19DecoderAllMultiTone32getSizeFilledBlockCircularBufferEv, symObjAddr: 0x81C, symBinAddr: 0xA344, symSize: 0x4 }
+  - { offsetInCU: 0x5AFB, offset: 0x6C301, size: 0x8, addend: 0x0, symName: __ZN3OXY19DecoderAllMultiTone32getSizeFilledBlockCircularBufferEi, symObjAddr: 0x820, symBinAddr: 0xA348, symSize: 0x4 }
+  - { offsetInCU: 0x5FF1, offset: 0x6C7F7, size: 0x8, addend: 0x0, symName: __ZN3OXY19DecoderAllMultiTone17DecodeAudioBufferEPfi, symObjAddr: 0x824, symBinAddr: 0xA34C, symSize: 0x478 }
+  - { offsetInCU: 0x6F73, offset: 0x6D779, size: 0x8, addend: 0x0, symName: __ZN3OXY19DecoderAllMultiTone12AnalyzeTokenEPfi, symObjAddr: 0xC9C, symBinAddr: 0xA7C4, symSize: 0x3D8 }
+  - { offsetInCU: 0x71F5, offset: 0x6D9FB, size: 0x8, addend: 0x0, symName: __ZN3OXY19DecoderAllMultiTone12ComputeStatsEi, symObjAddr: 0x1A84, symBinAddr: 0xB5AC, symSize: 0x3D4 }
+  - { offsetInCU: 0x75C5, offset: 0x6DDCB, size: 0x8, addend: 0x0, symName: __ZN3OXY19DecoderAllMultiTone14GetDecodedDataEPc, symObjAddr: 0x1074, symBinAddr: 0xAB9C, symSize: 0x3DC }
+  - { offsetInCU: 0x7B05, offset: 0x6E30B, size: 0x8, addend: 0x0, symName: __ZN3OXY19DecoderAllMultiTone11GetSpectrumEPf, symObjAddr: 0x1450, symBinAddr: 0xAF78, symSize: 0x4 }
+  - { offsetInCU: 0x7B3F, offset: 0x6E345, size: 0x8, addend: 0x0, symName: __ZN3OXY19DecoderAllMultiTone18AnalyzeStartTokensEPf, symObjAddr: 0x1454, symBinAddr: 0xAF7C, symSize: 0x484 }
+  - { offsetInCU: 0x7D2A, offset: 0x6E530, size: 0x8, addend: 0x0, symName: __ZN3OXY19DecoderAllMultiTone23ComputeStatsStartTokensEi, symObjAddr: 0x18D8, symBinAddr: 0xB400, symSize: 0x1AC }
+  - { offsetInCU: 0x825C, offset: 0x6EA62, size: 0x8, addend: 0x0, symName: __ZN3OXY19DecoderAllMultiTone32ComputeBlockMagSpecSumsLastTokenEiiiRNSt3__16vectorIfNS1_9allocatorIfEEEE, symObjAddr: 0x1E58, symBinAddr: 0xB980, symSize: 0x284 }
+  - { offsetInCU: 0x8789, offset: 0x6EF8F, size: 0x8, addend: 0x0, symName: __ZN3OXY19DecoderAllMultiTone35ComputeBlockMagSpecSumsCurrentTokenEiiiRNSt3__16vectorIfNS1_9allocatorIfEEEE, symObjAddr: 0x20DC, symBinAddr: 0xBC04, symSize: 0x280 }
+  - { offsetInCU: 0x8794, offset: 0x6EF9A, size: 0x8, addend: 0x0, symName: __ZN3OXY19DecoderAllMultiTone35ComputeBlockMagSpecSumsCurrentTokenEiiiRNSt3__16vectorIfNS1_9allocatorIfEEEE, symObjAddr: 0x20DC, symBinAddr: 0xBC04, symSize: 0x280 }
+  - { offsetInCU: 0x8CC1, offset: 0x6F4C7, size: 0x8, addend: 0x0, symName: __ZNSt3__1L20__throw_length_errorEPKc, symObjAddr: 0x235C, symBinAddr: 0xBE84, symSize: 0x4C }
+  - { offsetInCU: 0x8CCD, offset: 0x6F4D3, size: 0x8, addend: 0x0, symName: __ZNSt12length_errorC1EPKc, symObjAddr: 0x23A8, symBinAddr: 0xBED0, symSize: 0x2C }
+  - { offsetInCU: 0x2967, offset: 0x71EC5, size: 0x8, addend: 0x0, symName: __ZNSt3__1L20__throw_length_errorEPKc, symObjAddr: 0x1B90, symBinAddr: 0xDA80, symSize: 0x4C }
+  - { offsetInCU: 0x3EF2, offset: 0x73450, size: 0x8, addend: 0x0, symName: __ZN3OXY23DecoderAudibleMultiToneC2Efii, symObjAddr: 0x0, symBinAddr: 0xBEFC, symSize: 0x20C }
+  - { offsetInCU: 0x3FE9, offset: 0x73547, size: 0x8, addend: 0x0, symName: __ZN3OXY23DecoderAudibleMultiToneC1Efii, symObjAddr: 0x218, symBinAddr: 0xC108, symSize: 0x4 }
+  - { offsetInCU: 0x4047, offset: 0x735A5, size: 0x8, addend: 0x0, symName: __ZN3OXY23DecoderAudibleMultiToneC1Efii, symObjAddr: 0x218, symBinAddr: 0xC108, symSize: 0x4 }
+  - { offsetInCU: 0x4075, offset: 0x735D3, size: 0x8, addend: 0x0, symName: __ZN3OXY23DecoderAudibleMultiToneD2Ev, symObjAddr: 0x21C, symBinAddr: 0xC10C, symSize: 0x80 }
+  - { offsetInCU: 0x40A2, offset: 0x73600, size: 0x8, addend: 0x0, symName: __ZN3OXY23DecoderAudibleMultiToneD1Ev, symObjAddr: 0x29C, symBinAddr: 0xC18C, symSize: 0x4 }
+  - { offsetInCU: 0x40D0, offset: 0x7362E, size: 0x8, addend: 0x0, symName: __ZN3OXY23DecoderAudibleMultiToneD1Ev, symObjAddr: 0x29C, symBinAddr: 0xC18C, symSize: 0x4 }
+  - { offsetInCU: 0x40E4, offset: 0x73642, size: 0x8, addend: 0x0, symName: __ZN3OXY23DecoderAudibleMultiTone32getSizeFilledFrameCircularBufferEv, symObjAddr: 0x2A0, symBinAddr: 0xC190, symSize: 0x4 }
+  - { offsetInCU: 0x4107, offset: 0x73665, size: 0x8, addend: 0x0, symName: __ZN3OXY23DecoderAudibleMultiTone32getSizeFilledBlockCircularBufferEv, symObjAddr: 0x2A4, symBinAddr: 0xC194, symSize: 0x4 }
+  - { offsetInCU: 0x45F3, offset: 0x73B51, size: 0x8, addend: 0x0, symName: __ZN3OXY23DecoderAudibleMultiTone17DecodeAudioBufferEPfi, symObjAddr: 0x2A8, symBinAddr: 0xC198, symSize: 0x47C }
+  - { offsetInCU: 0x57A4, offset: 0x74D02, size: 0x8, addend: 0x0, symName: __ZN3OXY23DecoderAudibleMultiTone14GetDecodedDataEPc, symObjAddr: 0x724, symBinAddr: 0xC614, symSize: 0x3DC }
+  - { offsetInCU: 0x5CD3, offset: 0x75231, size: 0x8, addend: 0x0, symName: __ZN3OXY23DecoderAudibleMultiTone11GetSpectrumEPf, symObjAddr: 0xB00, symBinAddr: 0xC9F0, symSize: 0x4 }
+  - { offsetInCU: 0x5D24, offset: 0x75282, size: 0x8, addend: 0x0, symName: __ZN3OXY23DecoderAudibleMultiTone18AnalyzeStartTokensEPf, symObjAddr: 0xB04, symBinAddr: 0xC9F4, symSize: 0x40C }
+  - { offsetInCU: 0x5EC2, offset: 0x75420, size: 0x8, addend: 0x0, symName: __ZN3OXY23DecoderAudibleMultiTone12AnalyzeTokenEPf, symObjAddr: 0xF10, symBinAddr: 0xCE00, symSize: 0x29C }
+  - { offsetInCU: 0x60A5, offset: 0x75603, size: 0x8, addend: 0x0, symName: __ZN3OXY23DecoderAudibleMultiTone23ComputeStatsStartTokensEv, symObjAddr: 0x11AC, symBinAddr: 0xD09C, symSize: 0x198 }
+  - { offsetInCU: 0x6180, offset: 0x756DE, size: 0x8, addend: 0x0, symName: __ZN3OXY23DecoderAudibleMultiTone12ComputeStatsEv, symObjAddr: 0x1344, symBinAddr: 0xD234, symSize: 0x348 }
+  - { offsetInCU: 0x674A, offset: 0x75CA8, size: 0x8, addend: 0x0, symName: __ZN3OXY23DecoderAudibleMultiTone32ComputeBlockMagSpecSumsLastTokenEiiiRNSt3__16vectorIfNS1_9allocatorIfEEEE, symObjAddr: 0x168C, symBinAddr: 0xD57C, symSize: 0x284 }
+  - { offsetInCU: 0x6C76, offset: 0x761D4, size: 0x8, addend: 0x0, symName: __ZN3OXY23DecoderAudibleMultiTone35ComputeBlockMagSpecSumsCurrentTokenEiiiRNSt3__16vectorIfNS1_9allocatorIfEEEE, symObjAddr: 0x1910, symBinAddr: 0xD800, symSize: 0x280 }
+  - { offsetInCU: 0x6C82, offset: 0x761E0, size: 0x8, addend: 0x0, symName: __ZN3OXY23DecoderAudibleMultiTone35ComputeBlockMagSpecSumsCurrentTokenEiiiRNSt3__16vectorIfNS1_9allocatorIfEEEE, symObjAddr: 0x1910, symBinAddr: 0xD800, symSize: 0x280 }
+  - { offsetInCU: 0x71AE, offset: 0x7670C, size: 0x8, addend: 0x0, symName: __ZNSt3__1L20__throw_length_errorEPKc, symObjAddr: 0x1B90, symBinAddr: 0xDA80, symSize: 0x4C }
+  - { offsetInCU: 0x71BA, offset: 0x76718, size: 0x8, addend: 0x0, symName: __ZNSt12length_errorC1EPKc, symObjAddr: 0x1BDC, symBinAddr: 0xDACC, symSize: 0x2C }
+  - { offsetInCU: 0x2967, offset: 0x7910A, size: 0x8, addend: 0x0, symName: __ZNSt3__1L20__throw_length_errorEPKc, symObjAddr: 0x1B94, symBinAddr: 0xF680, symSize: 0x4C }
+  - { offsetInCU: 0x3EF2, offset: 0x7A695, size: 0x8, addend: 0x0, symName: __ZN3OXY27DecoderCompressionMultiToneC2Efii, symObjAddr: 0x0, symBinAddr: 0xDAF8, symSize: 0x210 }
+  - { offsetInCU: 0x3FE9, offset: 0x7A78C, size: 0x8, addend: 0x0, symName: __ZN3OXY27DecoderCompressionMultiToneC1Efii, symObjAddr: 0x21C, symBinAddr: 0xDD08, symSize: 0x4 }
+  - { offsetInCU: 0x4047, offset: 0x7A7EA, size: 0x8, addend: 0x0, symName: __ZN3OXY27DecoderCompressionMultiToneC1Efii, symObjAddr: 0x21C, symBinAddr: 0xDD08, symSize: 0x4 }
+  - { offsetInCU: 0x4075, offset: 0x7A818, size: 0x8, addend: 0x0, symName: __ZN3OXY27DecoderCompressionMultiToneD2Ev, symObjAddr: 0x220, symBinAddr: 0xDD0C, symSize: 0x80 }
+  - { offsetInCU: 0x40A2, offset: 0x7A845, size: 0x8, addend: 0x0, symName: __ZN3OXY27DecoderCompressionMultiToneD1Ev, symObjAddr: 0x2A0, symBinAddr: 0xDD8C, symSize: 0x4 }
+  - { offsetInCU: 0x40D0, offset: 0x7A873, size: 0x8, addend: 0x0, symName: __ZN3OXY27DecoderCompressionMultiToneD1Ev, symObjAddr: 0x2A0, symBinAddr: 0xDD8C, symSize: 0x4 }
+  - { offsetInCU: 0x40E4, offset: 0x7A887, size: 0x8, addend: 0x0, symName: __ZN3OXY27DecoderCompressionMultiTone32getSizeFilledFrameCircularBufferEv, symObjAddr: 0x2A4, symBinAddr: 0xDD90, symSize: 0x4 }
+  - { offsetInCU: 0x4107, offset: 0x7A8AA, size: 0x8, addend: 0x0, symName: __ZN3OXY27DecoderCompressionMultiTone32getSizeFilledBlockCircularBufferEv, symObjAddr: 0x2A8, symBinAddr: 0xDD94, symSize: 0x4 }
+  - { offsetInCU: 0x45F3, offset: 0x7AD96, size: 0x8, addend: 0x0, symName: __ZN3OXY27DecoderCompressionMultiTone17DecodeAudioBufferEPfi, symObjAddr: 0x2AC, symBinAddr: 0xDD98, symSize: 0x47C }
+  - { offsetInCU: 0x57A4, offset: 0x7BF47, size: 0x8, addend: 0x0, symName: __ZN3OXY27DecoderCompressionMultiTone14GetDecodedDataEPc, symObjAddr: 0x728, symBinAddr: 0xE214, symSize: 0x3DC }
+  - { offsetInCU: 0x5CD3, offset: 0x7C476, size: 0x8, addend: 0x0, symName: __ZN3OXY27DecoderCompressionMultiTone11GetSpectrumEPf, symObjAddr: 0xB04, symBinAddr: 0xE5F0, symSize: 0x4 }
+  - { offsetInCU: 0x5D24, offset: 0x7C4C7, size: 0x8, addend: 0x0, symName: __ZN3OXY27DecoderCompressionMultiTone18AnalyzeStartTokensEPf, symObjAddr: 0xB08, symBinAddr: 0xE5F4, symSize: 0x40C }
+  - { offsetInCU: 0x5EC2, offset: 0x7C665, size: 0x8, addend: 0x0, symName: __ZN3OXY27DecoderCompressionMultiTone12AnalyzeTokenEPf, symObjAddr: 0xF14, symBinAddr: 0xEA00, symSize: 0x29C }
+  - { offsetInCU: 0x60A5, offset: 0x7C848, size: 0x8, addend: 0x0, symName: __ZN3OXY27DecoderCompressionMultiTone23ComputeStatsStartTokensEv, symObjAddr: 0x11B0, symBinAddr: 0xEC9C, symSize: 0x198 }
+  - { offsetInCU: 0x6180, offset: 0x7C923, size: 0x8, addend: 0x0, symName: __ZN3OXY27DecoderCompressionMultiTone12ComputeStatsEv, symObjAddr: 0x1348, symBinAddr: 0xEE34, symSize: 0x348 }
+  - { offsetInCU: 0x674A, offset: 0x7CEED, size: 0x8, addend: 0x0, symName: __ZN3OXY27DecoderCompressionMultiTone32ComputeBlockMagSpecSumsLastTokenEiiiRNSt3__16vectorIfNS1_9allocatorIfEEEE, symObjAddr: 0x1690, symBinAddr: 0xF17C, symSize: 0x284 }
+  - { offsetInCU: 0x6C76, offset: 0x7D419, size: 0x8, addend: 0x0, symName: __ZN3OXY27DecoderCompressionMultiTone35ComputeBlockMagSpecSumsCurrentTokenEiiiRNSt3__16vectorIfNS1_9allocatorIfEEEE, symObjAddr: 0x1914, symBinAddr: 0xF400, symSize: 0x280 }
+  - { offsetInCU: 0x6C82, offset: 0x7D425, size: 0x8, addend: 0x0, symName: __ZN3OXY27DecoderCompressionMultiTone35ComputeBlockMagSpecSumsCurrentTokenEiiiRNSt3__16vectorIfNS1_9allocatorIfEEEE, symObjAddr: 0x1914, symBinAddr: 0xF400, symSize: 0x280 }
+  - { offsetInCU: 0x71AE, offset: 0x7D951, size: 0x8, addend: 0x0, symName: __ZNSt3__1L20__throw_length_errorEPKc, symObjAddr: 0x1B94, symBinAddr: 0xF680, symSize: 0x4C }
+  - { offsetInCU: 0x71BA, offset: 0x7D95D, size: 0x8, addend: 0x0, symName: __ZNSt12length_errorC1EPKc, symObjAddr: 0x1BE0, symBinAddr: 0xF6CC, symSize: 0x2C }
+  - { offsetInCU: 0x29A7, offset: 0x8038F, size: 0x8, addend: 0x0, symName: __ZNSt3__1L20__throw_length_errorEPKc, symObjAddr: 0x1BB8, symBinAddr: 0x112A4, symSize: 0x4C }
+  - { offsetInCU: 0x3F32, offset: 0x8191A, size: 0x8, addend: 0x0, symName: __ZN3OXY22DecoderCustomMultiToneC2Efii, symObjAddr: 0x0, symBinAddr: 0xF6F8, symSize: 0x210 }
+  - { offsetInCU: 0x4029, offset: 0x81A11, size: 0x8, addend: 0x0, symName: __ZN3OXY22DecoderCustomMultiToneC1Efii, symObjAddr: 0x21C, symBinAddr: 0xF908, symSize: 0x4 }
+  - { offsetInCU: 0x4087, offset: 0x81A6F, size: 0x8, addend: 0x0, symName: __ZN3OXY22DecoderCustomMultiToneC1Efii, symObjAddr: 0x21C, symBinAddr: 0xF908, symSize: 0x4 }
+  - { offsetInCU: 0x40B5, offset: 0x81A9D, size: 0x8, addend: 0x0, symName: __ZN3OXY22DecoderCustomMultiToneD2Ev, symObjAddr: 0x220, symBinAddr: 0xF90C, symSize: 0x80 }
+  - { offsetInCU: 0x40E2, offset: 0x81ACA, size: 0x8, addend: 0x0, symName: __ZN3OXY22DecoderCustomMultiToneD1Ev, symObjAddr: 0x2A0, symBinAddr: 0xF98C, symSize: 0x4 }
+  - { offsetInCU: 0x4110, offset: 0x81AF8, size: 0x8, addend: 0x0, symName: __ZN3OXY22DecoderCustomMultiToneD1Ev, symObjAddr: 0x2A0, symBinAddr: 0xF98C, symSize: 0x4 }
+  - { offsetInCU: 0x4124, offset: 0x81B0C, size: 0x8, addend: 0x0, symName: __ZN3OXY22DecoderCustomMultiTone32getSizeFilledFrameCircularBufferEv, symObjAddr: 0x2A4, symBinAddr: 0xF990, symSize: 0x4 }
+  - { offsetInCU: 0x4147, offset: 0x81B2F, size: 0x8, addend: 0x0, symName: __ZN3OXY22DecoderCustomMultiTone32getSizeFilledBlockCircularBufferEv, symObjAddr: 0x2A8, symBinAddr: 0xF994, symSize: 0x4 }
+  - { offsetInCU: 0x4633, offset: 0x8201B, size: 0x8, addend: 0x0, symName: __ZN3OXY22DecoderCustomMultiTone17DecodeAudioBufferEPfi, symObjAddr: 0x2AC, symBinAddr: 0xF998, symSize: 0x47C }
+  - { offsetInCU: 0x57E4, offset: 0x831CC, size: 0x8, addend: 0x0, symName: __ZN3OXY22DecoderCustomMultiTone14GetDecodedDataEPc, symObjAddr: 0x728, symBinAddr: 0xFE14, symSize: 0x3DC }
+  - { offsetInCU: 0x5D13, offset: 0x836FB, size: 0x8, addend: 0x0, symName: __ZN3OXY22DecoderCustomMultiTone20GetDecodingBeginFreqEv, symObjAddr: 0xB04, symBinAddr: 0x101F0, symSize: 0x10 }
+  - { offsetInCU: 0x5D51, offset: 0x83739, size: 0x8, addend: 0x0, symName: __ZN3OXY22DecoderCustomMultiTone18GetDecodingEndFreqEv, symObjAddr: 0xB14, symBinAddr: 0x10200, symSize: 0x14 }
+  - { offsetInCU: 0x5D88, offset: 0x83770, size: 0x8, addend: 0x0, symName: __ZN3OXY22DecoderCustomMultiTone11GetSpectrumEPf, symObjAddr: 0xB28, symBinAddr: 0x10214, symSize: 0x4 }
+  - { offsetInCU: 0x5DD9, offset: 0x837C1, size: 0x8, addend: 0x0, symName: __ZN3OXY22DecoderCustomMultiTone18AnalyzeStartTokensEPf, symObjAddr: 0xB2C, symBinAddr: 0x10218, symSize: 0x40C }
+  - { offsetInCU: 0x5F7C, offset: 0x83964, size: 0x8, addend: 0x0, symName: __ZN3OXY22DecoderCustomMultiTone12AnalyzeTokenEPf, symObjAddr: 0xF38, symBinAddr: 0x10624, symSize: 0x29C }
+  - { offsetInCU: 0x615F, offset: 0x83B47, size: 0x8, addend: 0x0, symName: __ZN3OXY22DecoderCustomMultiTone23ComputeStatsStartTokensEv, symObjAddr: 0x11D4, symBinAddr: 0x108C0, symSize: 0x198 }
+  - { offsetInCU: 0x623A, offset: 0x83C22, size: 0x8, addend: 0x0, symName: __ZN3OXY22DecoderCustomMultiTone12ComputeStatsEv, symObjAddr: 0x136C, symBinAddr: 0x10A58, symSize: 0x348 }
+  - { offsetInCU: 0x6804, offset: 0x841EC, size: 0x8, addend: 0x0, symName: __ZN3OXY22DecoderCustomMultiTone32ComputeBlockMagSpecSumsLastTokenEiiiRNSt3__16vectorIfNS1_9allocatorIfEEEE, symObjAddr: 0x16B4, symBinAddr: 0x10DA0, symSize: 0x284 }
+  - { offsetInCU: 0x6D30, offset: 0x84718, size: 0x8, addend: 0x0, symName: __ZN3OXY22DecoderCustomMultiTone35ComputeBlockMagSpecSumsCurrentTokenEiiiRNSt3__16vectorIfNS1_9allocatorIfEEEE, symObjAddr: 0x1938, symBinAddr: 0x11024, symSize: 0x280 }
+  - { offsetInCU: 0x6D3C, offset: 0x84724, size: 0x8, addend: 0x0, symName: __ZN3OXY22DecoderCustomMultiTone35ComputeBlockMagSpecSumsCurrentTokenEiiiRNSt3__16vectorIfNS1_9allocatorIfEEEE, symObjAddr: 0x1938, symBinAddr: 0x11024, symSize: 0x280 }
+  - { offsetInCU: 0x7268, offset: 0x84C50, size: 0x8, addend: 0x0, symName: __ZNSt3__1L20__throw_length_errorEPKc, symObjAddr: 0x1BB8, symBinAddr: 0x112A4, symSize: 0x4C }
+  - { offsetInCU: 0x7274, offset: 0x84C5C, size: 0x8, addend: 0x0, symName: __ZNSt12length_errorC1EPKc, symObjAddr: 0x1C04, symBinAddr: 0x112F0, symSize: 0x2C }
+  - { offsetInCU: 0x2967, offset: 0x8764E, size: 0x8, addend: 0x0, symName: __ZNSt3__1L20__throw_length_errorEPKc, symObjAddr: 0x1B94, symBinAddr: 0x12EA4, symSize: 0x4C }
+  - { offsetInCU: 0x3EF2, offset: 0x88BD9, size: 0x8, addend: 0x0, symName: __ZN3OXY26DecoderNonAudibleMultiToneC2Efii, symObjAddr: 0x0, symBinAddr: 0x1131C, symSize: 0x210 }
+  - { offsetInCU: 0x3FE9, offset: 0x88CD0, size: 0x8, addend: 0x0, symName: __ZN3OXY26DecoderNonAudibleMultiToneC1Efii, symObjAddr: 0x21C, symBinAddr: 0x1152C, symSize: 0x4 }
+  - { offsetInCU: 0x4047, offset: 0x88D2E, size: 0x8, addend: 0x0, symName: __ZN3OXY26DecoderNonAudibleMultiToneC1Efii, symObjAddr: 0x21C, symBinAddr: 0x1152C, symSize: 0x4 }
+  - { offsetInCU: 0x4075, offset: 0x88D5C, size: 0x8, addend: 0x0, symName: __ZN3OXY26DecoderNonAudibleMultiToneD2Ev, symObjAddr: 0x220, symBinAddr: 0x11530, symSize: 0x80 }
+  - { offsetInCU: 0x40A2, offset: 0x88D89, size: 0x8, addend: 0x0, symName: __ZN3OXY26DecoderNonAudibleMultiToneD1Ev, symObjAddr: 0x2A0, symBinAddr: 0x115B0, symSize: 0x4 }
+  - { offsetInCU: 0x40D0, offset: 0x88DB7, size: 0x8, addend: 0x0, symName: __ZN3OXY26DecoderNonAudibleMultiToneD1Ev, symObjAddr: 0x2A0, symBinAddr: 0x115B0, symSize: 0x4 }
+  - { offsetInCU: 0x40E4, offset: 0x88DCB, size: 0x8, addend: 0x0, symName: __ZN3OXY26DecoderNonAudibleMultiTone32getSizeFilledFrameCircularBufferEv, symObjAddr: 0x2A4, symBinAddr: 0x115B4, symSize: 0x4 }
+  - { offsetInCU: 0x4107, offset: 0x88DEE, size: 0x8, addend: 0x0, symName: __ZN3OXY26DecoderNonAudibleMultiTone32getSizeFilledBlockCircularBufferEv, symObjAddr: 0x2A8, symBinAddr: 0x115B8, symSize: 0x4 }
+  - { offsetInCU: 0x45F3, offset: 0x892DA, size: 0x8, addend: 0x0, symName: __ZN3OXY26DecoderNonAudibleMultiTone17DecodeAudioBufferEPfi, symObjAddr: 0x2AC, symBinAddr: 0x115BC, symSize: 0x47C }
+  - { offsetInCU: 0x57A4, offset: 0x8A48B, size: 0x8, addend: 0x0, symName: __ZN3OXY26DecoderNonAudibleMultiTone14GetDecodedDataEPc, symObjAddr: 0x728, symBinAddr: 0x11A38, symSize: 0x3DC }
+  - { offsetInCU: 0x5CD3, offset: 0x8A9BA, size: 0x8, addend: 0x0, symName: __ZN3OXY26DecoderNonAudibleMultiTone11GetSpectrumEPf, symObjAddr: 0xB04, symBinAddr: 0x11E14, symSize: 0x4 }
+  - { offsetInCU: 0x5D24, offset: 0x8AA0B, size: 0x8, addend: 0x0, symName: __ZN3OXY26DecoderNonAudibleMultiTone18AnalyzeStartTokensEPf, symObjAddr: 0xB08, symBinAddr: 0x11E18, symSize: 0x40C }
+  - { offsetInCU: 0x5EC2, offset: 0x8ABA9, size: 0x8, addend: 0x0, symName: __ZN3OXY26DecoderNonAudibleMultiTone12AnalyzeTokenEPf, symObjAddr: 0xF14, symBinAddr: 0x12224, symSize: 0x29C }
+  - { offsetInCU: 0x60A5, offset: 0x8AD8C, size: 0x8, addend: 0x0, symName: __ZN3OXY26DecoderNonAudibleMultiTone23ComputeStatsStartTokensEv, symObjAddr: 0x11B0, symBinAddr: 0x124C0, symSize: 0x198 }
+  - { offsetInCU: 0x6180, offset: 0x8AE67, size: 0x8, addend: 0x0, symName: __ZN3OXY26DecoderNonAudibleMultiTone12ComputeStatsEv, symObjAddr: 0x1348, symBinAddr: 0x12658, symSize: 0x348 }
+  - { offsetInCU: 0x674A, offset: 0x8B431, size: 0x8, addend: 0x0, symName: __ZN3OXY26DecoderNonAudibleMultiTone32ComputeBlockMagSpecSumsLastTokenEiiiRNSt3__16vectorIfNS1_9allocatorIfEEEE, symObjAddr: 0x1690, symBinAddr: 0x129A0, symSize: 0x284 }
+  - { offsetInCU: 0x6C76, offset: 0x8B95D, size: 0x8, addend: 0x0, symName: __ZN3OXY26DecoderNonAudibleMultiTone35ComputeBlockMagSpecSumsCurrentTokenEiiiRNSt3__16vectorIfNS1_9allocatorIfEEEE, symObjAddr: 0x1914, symBinAddr: 0x12C24, symSize: 0x280 }
+  - { offsetInCU: 0x6C82, offset: 0x8B969, size: 0x8, addend: 0x0, symName: __ZN3OXY26DecoderNonAudibleMultiTone35ComputeBlockMagSpecSumsCurrentTokenEiiiRNSt3__16vectorIfNS1_9allocatorIfEEEE, symObjAddr: 0x1914, symBinAddr: 0x12C24, symSize: 0x280 }
+  - { offsetInCU: 0x71AE, offset: 0x8BE95, size: 0x8, addend: 0x0, symName: __ZNSt3__1L20__throw_length_errorEPKc, symObjAddr: 0x1B94, symBinAddr: 0x12EA4, symSize: 0x4C }
+  - { offsetInCU: 0x71BA, offset: 0x8BEA1, size: 0x8, addend: 0x0, symName: __ZNSt12length_errorC1EPKc, symObjAddr: 0x1BE0, symBinAddr: 0x12EF0, symSize: 0x2C }
+  - { offsetInCU: 0x26, offset: 0x8BF52, size: 0x8, addend: 0x0, symName: __ZN3OXY7EncoderC2Efiiii, symObjAddr: 0x0, symBinAddr: 0x12F1C, symSize: 0xC0 }
+  - { offsetInCU: 0x2E2D, offset: 0x8ED59, size: 0x8, addend: 0x0, symName: __ZN3OXY7EncoderC2Efiiii, symObjAddr: 0x0, symBinAddr: 0x12F1C, symSize: 0xC0 }
+  - { offsetInCU: 0x2F17, offset: 0x8EE43, size: 0x8, addend: 0x0, symName: __ZN3OXY7EncoderC1Efiiii, symObjAddr: 0xC0, symBinAddr: 0x12FDC, symSize: 0xC0 }
+  - { offsetInCU: 0x2FF4, offset: 0x8EF20, size: 0x8, addend: 0x0, symName: __ZN3OXY7EncoderD2Ev, symObjAddr: 0x180, symBinAddr: 0x1309C, symSize: 0x7C }
+  - { offsetInCU: 0x3033, offset: 0x8EF5F, size: 0x8, addend: 0x0, symName: __ZN3OXY7EncoderD1Ev, symObjAddr: 0x1FC, symBinAddr: 0x13118, symSize: 0x7C }
+  - { offsetInCU: 0x3078, offset: 0x8EFA4, size: 0x8, addend: 0x0, symName: __ZN3OXY7Encoder17SetAudioSignatureEiPKf, symObjAddr: 0x278, symBinAddr: 0x13194, symSize: 0xD0 }
+  - { offsetInCU: 0x30C1, offset: 0x8EFED, size: 0x8, addend: 0x0, symName: __ZN3OXY7Encoder23EncodeDataToAudioBufferEPKciiS2_i, symObjAddr: 0x348, symBinAddr: 0x13264, symSize: 0x8 }
+  - { offsetInCU: 0x3122, offset: 0x8F04E, size: 0x8, addend: 0x0, symName: __ZN3OXY7Encoder21GetEncodedAudioBufferEPf, symObjAddr: 0x350, symBinAddr: 0x1326C, symSize: 0x50 }
+  - { offsetInCU: 0x3168, offset: 0x8F094, size: 0x8, addend: 0x0, symName: __ZN3OXY7Encoder21GetEncodedAudioBufferEPf, symObjAddr: 0x350, symBinAddr: 0x1326C, symSize: 0x50 }
+  - { offsetInCU: 0x3188, offset: 0x8F0B4, size: 0x8, addend: 0x0, symName: __ZN3OXY7Encoder23ResetEncodedAudioBufferEv, symObjAddr: 0x3A0, symBinAddr: 0x132BC, symSize: 0xC }
+  - { offsetInCU: 0x163F, offset: 0x9071C, size: 0x8, addend: 0x0, symName: __ZNSt3__1L20__throw_length_errorEPKc, symObjAddr: 0x1188, symBinAddr: 0x14444, symSize: 0x4C }
+  - { offsetInCU: 0x3908, offset: 0x929E5, size: 0x8, addend: 0x0, symName: __ZN3OXY23EncoderAudibleMultiToneC2Efii, symObjAddr: 0x0, symBinAddr: 0x132C8, symSize: 0x7C }
+  - { offsetInCU: 0x398E, offset: 0x92A6B, size: 0x8, addend: 0x0, symName: __ZN3OXY23EncoderAudibleMultiToneC1Efii, symObjAddr: 0x88, symBinAddr: 0x13344, symSize: 0x7C }
+  - { offsetInCU: 0x3A21, offset: 0x92AFE, size: 0x8, addend: 0x0, symName: __ZN3OXY23EncoderAudibleMultiToneD2Ev, symObjAddr: 0x104, symBinAddr: 0x133C0, symSize: 0x44 }
+  - { offsetInCU: 0x3A60, offset: 0x92B3D, size: 0x8, addend: 0x0, symName: __ZN3OXY23EncoderAudibleMultiToneD1Ev, symObjAddr: 0x148, symBinAddr: 0x13404, symSize: 0x44 }
+  - { offsetInCU: 0x4216, offset: 0x932F3, size: 0x8, addend: 0x0, symName: __ZN3OXY23EncoderAudibleMultiTone23EncodeDataToAudioBufferEPKciiS2_i, symObjAddr: 0x18C, symBinAddr: 0x13448, symSize: 0xFF4 }
+  - { offsetInCU: 0x68D5, offset: 0x959B2, size: 0x8, addend: 0x0, symName: __ZN3OXY23EncoderAudibleMultiTone21GetEncodedAudioBufferEPf, symObjAddr: 0x1180, symBinAddr: 0x1443C, symSize: 0x4 }
+  - { offsetInCU: 0x6910, offset: 0x959ED, size: 0x8, addend: 0x0, symName: __ZN3OXY23EncoderAudibleMultiTone23ResetEncodedAudioBufferEv, symObjAddr: 0x1184, symBinAddr: 0x14440, symSize: 0x4 }
+  - { offsetInCU: 0x693A, offset: 0x95A17, size: 0x8, addend: 0x0, symName: __ZNSt12length_errorC1EPKc, symObjAddr: 0x11D4, symBinAddr: 0x14490, symSize: 0x2C }
+  - { offsetInCU: 0x15FD, offset: 0x9709F, size: 0x8, addend: 0x0, symName: __ZNSt3__1L20__throw_length_errorEPKc, symObjAddr: 0x1188, symBinAddr: 0x15638, symSize: 0x4C }
+  - { offsetInCU: 0x38C6, offset: 0x99368, size: 0x8, addend: 0x0, symName: __ZN3OXY27EncoderCompressionMultiToneC2Efii, symObjAddr: 0x0, symBinAddr: 0x144BC, symSize: 0x7C }
+  - { offsetInCU: 0x394C, offset: 0x993EE, size: 0x8, addend: 0x0, symName: __ZN3OXY27EncoderCompressionMultiToneC1Efii, symObjAddr: 0x88, symBinAddr: 0x14538, symSize: 0x7C }
+  - { offsetInCU: 0x39DF, offset: 0x99481, size: 0x8, addend: 0x0, symName: __ZN3OXY27EncoderCompressionMultiToneD2Ev, symObjAddr: 0x104, symBinAddr: 0x145B4, symSize: 0x44 }
+  - { offsetInCU: 0x3A1E, offset: 0x994C0, size: 0x8, addend: 0x0, symName: __ZN3OXY27EncoderCompressionMultiToneD1Ev, symObjAddr: 0x148, symBinAddr: 0x145F8, symSize: 0x44 }
+  - { offsetInCU: 0x41CA, offset: 0x99C6C, size: 0x8, addend: 0x0, symName: __ZN3OXY27EncoderCompressionMultiTone23EncodeDataToAudioBufferEPKciiS2_i, symObjAddr: 0x18C, symBinAddr: 0x1463C, symSize: 0xFF4 }
+  - { offsetInCU: 0x6888, offset: 0x9C32A, size: 0x8, addend: 0x0, symName: __ZN3OXY27EncoderCompressionMultiTone21GetEncodedAudioBufferEPf, symObjAddr: 0x1180, symBinAddr: 0x15630, symSize: 0x4 }
+  - { offsetInCU: 0x68C3, offset: 0x9C365, size: 0x8, addend: 0x0, symName: __ZN3OXY27EncoderCompressionMultiTone23ResetEncodedAudioBufferEv, symObjAddr: 0x1184, symBinAddr: 0x15634, symSize: 0x4 }
+  - { offsetInCU: 0x68ED, offset: 0x9C38F, size: 0x8, addend: 0x0, symName: __ZNSt12length_errorC1EPKc, symObjAddr: 0x11D4, symBinAddr: 0x15684, symSize: 0x2C }
+  - { offsetInCU: 0x15FD, offset: 0x9DA17, size: 0x8, addend: 0x0, symName: __ZNSt3__1L20__throw_length_errorEPKc, symObjAddr: 0x1194, symBinAddr: 0x16838, symSize: 0x4C }
+  - { offsetInCU: 0x38C6, offset: 0x9FCE0, size: 0x8, addend: 0x0, symName: __ZN3OXY22EncoderCustomMultiToneC2Efii, symObjAddr: 0x0, symBinAddr: 0x156B0, symSize: 0x7C }
+  - { offsetInCU: 0x394C, offset: 0x9FD66, size: 0x8, addend: 0x0, symName: __ZN3OXY22EncoderCustomMultiToneC1Efii, symObjAddr: 0x88, symBinAddr: 0x1572C, symSize: 0x7C }
+  - { offsetInCU: 0x39DF, offset: 0x9FDF9, size: 0x8, addend: 0x0, symName: __ZN3OXY22EncoderCustomMultiToneD2Ev, symObjAddr: 0x104, symBinAddr: 0x157A8, symSize: 0x44 }
+  - { offsetInCU: 0x3A1E, offset: 0x9FE38, size: 0x8, addend: 0x0, symName: __ZN3OXY22EncoderCustomMultiToneD1Ev, symObjAddr: 0x148, symBinAddr: 0x157EC, symSize: 0x44 }
+  - { offsetInCU: 0x41CA, offset: 0xA05E4, size: 0x8, addend: 0x0, symName: __ZN3OXY22EncoderCustomMultiTone23EncodeDataToAudioBufferEPKciiS2_i, symObjAddr: 0x18C, symBinAddr: 0x15830, symSize: 0x1000 }
+  - { offsetInCU: 0x6889, offset: 0xA2CA3, size: 0x8, addend: 0x0, symName: __ZN3OXY22EncoderCustomMultiTone21GetEncodedAudioBufferEPf, symObjAddr: 0x118C, symBinAddr: 0x16830, symSize: 0x4 }
+  - { offsetInCU: 0x68C4, offset: 0xA2CDE, size: 0x8, addend: 0x0, symName: __ZN3OXY22EncoderCustomMultiTone23ResetEncodedAudioBufferEv, symObjAddr: 0x1190, symBinAddr: 0x16834, symSize: 0x4 }
+  - { offsetInCU: 0x68EE, offset: 0xA2D08, size: 0x8, addend: 0x0, symName: __ZNSt12length_errorC1EPKc, symObjAddr: 0x11E0, symBinAddr: 0x16884, symSize: 0x2C }
+  - { offsetInCU: 0x15FD, offset: 0xA4390, size: 0x8, addend: 0x0, symName: __ZNSt3__1L20__throw_length_errorEPKc, symObjAddr: 0x1194, symBinAddr: 0x17A38, symSize: 0x4C }
+  - { offsetInCU: 0x38C6, offset: 0xA6659, size: 0x8, addend: 0x0, symName: __ZN3OXY26EncoderNonAudibleMultiToneC2Efii, symObjAddr: 0x0, symBinAddr: 0x168B0, symSize: 0x7C }
+  - { offsetInCU: 0x394C, offset: 0xA66DF, size: 0x8, addend: 0x0, symName: __ZN3OXY26EncoderNonAudibleMultiToneC1Efii, symObjAddr: 0x88, symBinAddr: 0x1692C, symSize: 0x7C }
+  - { offsetInCU: 0x39DF, offset: 0xA6772, size: 0x8, addend: 0x0, symName: __ZN3OXY26EncoderNonAudibleMultiToneD2Ev, symObjAddr: 0x104, symBinAddr: 0x169A8, symSize: 0x44 }
+  - { offsetInCU: 0x3A1E, offset: 0xA67B1, size: 0x8, addend: 0x0, symName: __ZN3OXY26EncoderNonAudibleMultiToneD1Ev, symObjAddr: 0x148, symBinAddr: 0x169EC, symSize: 0x44 }
+  - { offsetInCU: 0x41CA, offset: 0xA6F5D, size: 0x8, addend: 0x0, symName: __ZN3OXY26EncoderNonAudibleMultiTone23EncodeDataToAudioBufferEPKciiS2_i, symObjAddr: 0x18C, symBinAddr: 0x16A30, symSize: 0x1000 }
+  - { offsetInCU: 0x6888, offset: 0xA961B, size: 0x8, addend: 0x0, symName: __ZN3OXY26EncoderNonAudibleMultiTone21GetEncodedAudioBufferEPf, symObjAddr: 0x118C, symBinAddr: 0x17A30, symSize: 0x4 }
+  - { offsetInCU: 0x68C3, offset: 0xA9656, size: 0x8, addend: 0x0, symName: __ZN3OXY26EncoderNonAudibleMultiTone23ResetEncodedAudioBufferEv, symObjAddr: 0x1190, symBinAddr: 0x17A34, symSize: 0x4 }
+  - { offsetInCU: 0x68ED, offset: 0xA9680, size: 0x8, addend: 0x0, symName: __ZNSt12length_errorC1EPKc, symObjAddr: 0x11E0, symBinAddr: 0x17A84, symSize: 0x2C }
+  - { offsetInCU: 0x26, offset: 0xA9731, size: 0x8, addend: 0x0, symName: __ZN7Globals4initEif, symObjAddr: 0x0, symBinAddr: 0x17AB0, symSize: 0x94 }
+  - { offsetInCU: 0x46, offset: 0xA9751, size: 0x8, addend: 0x0, symName: __ZN7Globals8durTokenE, symObjAddr: 0x3370, symBinAddr: 0x25928, symSize: 0x0 }
+  - { offsetInCU: 0x60, offset: 0xA976B, size: 0x8, addend: 0x0, symName: __ZN7Globals7durFadeE, symObjAddr: 0x3374, symBinAddr: 0x2592C, symSize: 0x0 }
+  - { offsetInCU: 0x7A, offset: 0xA9785, size: 0x8, addend: 0x0, symName: __ZN7Globals2piE, symObjAddr: 0x3378, symBinAddr: 0x25930, symSize: 0x0 }
+  - { offsetInCU: 0x94, offset: 0xA979F, size: 0x8, addend: 0x0, symName: __ZN7Globals6two_piE, symObjAddr: 0x337C, symBinAddr: 0x25934, symSize: 0x0 }
+  - { offsetInCU: 0xAE, offset: 0xA97B9, size: 0x8, addend: 0x0, symName: __ZN7Globals14tokenAmplitudeE, symObjAddr: 0x3380, symBinAddr: 0x25938, symSize: 0x0 }
+  - { offsetInCU: 0xC8, offset: 0xA97D3, size: 0x8, addend: 0x0, symName: __ZN7Globals12numTokensAllE, symObjAddr: 0x3384, symBinAddr: 0x2593C, symSize: 0x0 }
+  - { offsetInCU: 0xE2, offset: 0xA97ED, size: 0x8, addend: 0x0, symName: __ZN7Globals11numTonesAllE, symObjAddr: 0x3388, symBinAddr: 0x25940, symSize: 0x0 }
+  - { offsetInCU: 0xFC, offset: 0xA9807, size: 0x8, addend: 0x0, symName: __ZN7Globals16numTokensAudibleE, symObjAddr: 0x338C, symBinAddr: 0x25944, symSize: 0x0 }
+  - { offsetInCU: 0x116, offset: 0xA9821, size: 0x8, addend: 0x0, symName: __ZN7Globals19numTokensNonAudibleE, symObjAddr: 0x3390, symBinAddr: 0x25948, symSize: 0x0 }
+  - { offsetInCU: 0x130, offset: 0xA983B, size: 0x8, addend: 0x0, symName: __ZN7Globals20numTokensCompressionE, symObjAddr: 0x3394, symBinAddr: 0x2594C, symSize: 0x0 }
+  - { offsetInCU: 0x14A, offset: 0xA9855, size: 0x8, addend: 0x0, symName: __ZN7Globals15numTokensCustomE, symObjAddr: 0x3398, symBinAddr: 0x25950, symSize: 0x0 }
+  - { offsetInCU: 0x164, offset: 0xA986F, size: 0x8, addend: 0x0, symName: __ZN7Globals24numTonesAudibleMultiToneE, symObjAddr: 0x339C, symBinAddr: 0x25954, symSize: 0x0 }
+  - { offsetInCU: 0x17E, offset: 0xA9889, size: 0x8, addend: 0x0, symName: __ZN7Globals27numTonesNonAudibleMultiToneE, symObjAddr: 0x33A0, symBinAddr: 0x25958, symSize: 0x0 }
+  - { offsetInCU: 0x198, offset: 0xA98A3, size: 0x8, addend: 0x0, symName: __ZN7Globals28numTonesCompressionMultiToneE, symObjAddr: 0x33A4, symBinAddr: 0x2595C, symSize: 0x0 }
+  - { offsetInCU: 0x1B2, offset: 0xA98BD, size: 0x8, addend: 0x0, symName: __ZN7Globals23numTonesCustomMultiToneE, symObjAddr: 0x33A8, symBinAddr: 0x25960, symSize: 0x0 }
+  - { offsetInCU: 0x1CC, offset: 0xA98D7, size: 0x8, addend: 0x0, symName: __ZN7Globals30nBinsOffsetForAudibleMultiToneE, symObjAddr: 0x33AC, symBinAddr: 0x25964, symSize: 0x0 }
+  - { offsetInCU: 0x1E6, offset: 0xA98F1, size: 0x8, addend: 0x0, symName: __ZN7Globals29freqOffsetForAudibleMultiToneE, symObjAddr: 0x33B0, symBinAddr: 0x25968, symSize: 0x0 }
+  - { offsetInCU: 0x200, offset: 0xA990B, size: 0x8, addend: 0x0, symName: __ZN7Globals33nBinsOffsetForNonAudibleMultiToneE, symObjAddr: 0x33B4, symBinAddr: 0x2596C, symSize: 0x0 }
+  - { offsetInCU: 0x21A, offset: 0xA9925, size: 0x8, addend: 0x0, symName: __ZN7Globals32freqOffsetForNonAudibleMultiToneE, symObjAddr: 0x33B8, symBinAddr: 0x25970, symSize: 0x0 }
+  - { offsetInCU: 0x234, offset: 0xA993F, size: 0x8, addend: 0x0, symName: __ZN7Globals34nBinsOffsetForCompressionMultiToneE, symObjAddr: 0x33BC, symBinAddr: 0x25974, symSize: 0x0 }
+  - { offsetInCU: 0x24E, offset: 0xA9959, size: 0x8, addend: 0x0, symName: __ZN7Globals33freqOffsetForCompressionMultiToneE, symObjAddr: 0x33C0, symBinAddr: 0x25978, symSize: 0x0 }
+  - { offsetInCU: 0x268, offset: 0xA9973, size: 0x8, addend: 0x0, symName: __ZN7Globals26freqBaseForCustomMultiToneE, symObjAddr: 0x33C4, symBinAddr: 0x2597C, symSize: 0x0 }
+  - { offsetInCU: 0x282, offset: 0xA998D, size: 0x8, addend: 0x0, symName: __ZN7Globals32oxysSeparationForCustomMultiToneE, symObjAddr: 0x33C8, symBinAddr: 0x25980, symSize: 0x0 }
+  - { offsetInCU: 0x29C, offset: 0xA99A7, size: 0x8, addend: 0x0, symName: __ZN7Globals29nBinsOffsetForCustomMultiToneE, symObjAddr: 0x33CC, symBinAddr: 0x25984, symSize: 0x0 }
+  - { offsetInCU: 0x2B6, offset: 0xA99C1, size: 0x8, addend: 0x0, symName: __ZN7Globals28freqOffsetForCustomMultiToneE, symObjAddr: 0x33D0, symBinAddr: 0x25988, symSize: 0x0 }
+  - { offsetInCU: 0x2D0, offset: 0xA99DB, size: 0x8, addend: 0x0, symName: __ZN7Globals15frontDoorTokensE, symObjAddr: 0x33D4, symBinAddr: 0x2598C, symSize: 0x0 }
+  - { offsetInCU: 0x2EA, offset: 0xA99F5, size: 0x8, addend: 0x0, symName: __ZN7Globals9synthModeE, symObjAddr: 0x205EC, symBinAddr: 0x259C8, symSize: 0x0 }
+  - { offsetInCU: 0x304, offset: 0xA9A0F, size: 0x8, addend: 0x0, symName: __ZN7Globals11synthVolumeE, symObjAddr: 0x205F0, symBinAddr: 0x259CC, symSize: 0x0 }
+  - { offsetInCU: 0x31E, offset: 0xA9A29, size: 0x8, addend: 0x0, symName: __ZN7Globals18numFrontDoorTokensE, symObjAddr: 0x3224, symBinAddr: 0x21D48, symSize: 0x0 }
+  - { offsetInCU: 0x338, offset: 0xA9A43, size: 0x8, addend: 0x0, symName: __ZN7Globals13numWordTokensE, symObjAddr: 0x3228, symBinAddr: 0x21D4C, symSize: 0x0 }
+  - { offsetInCU: 0x352, offset: 0xA9A5D, size: 0x8, addend: 0x0, symName: __ZN7Globals14numCheckTokensE, symObjAddr: 0x322C, symBinAddr: 0x21D50, symSize: 0x0 }
+  - { offsetInCU: 0x36C, offset: 0xA9A77, size: 0x8, addend: 0x0, symName: __ZN7Globals19numCorrectionTokensE, symObjAddr: 0x3230, symBinAddr: 0x21D54, symSize: 0x0 }
+  - { offsetInCU: 0x386, offset: 0xA9A91, size: 0x8, addend: 0x0, symName: __ZN7Globals16numMessageTokensE, symObjAddr: 0x3234, symBinAddr: 0x21D58, symSize: 0x0 }
+  - { offsetInCU: 0x3A0, offset: 0xA9AAB, size: 0x8, addend: 0x0, symName: __ZN7Globals14numTotalTokensE, symObjAddr: 0x3238, symBinAddr: 0x21D5C, symSize: 0x0 }
+  - { offsetInCU: 0x3AE, offset: 0xA9AB9, size: 0x8, addend: 0x0, symName: __ZN7Globals4initEif, symObjAddr: 0x0, symBinAddr: 0x17AB0, symSize: 0x94 }
+  - { offsetInCU: 0x3FD, offset: 0xA9B08, size: 0x8, addend: 0x0, symName: __ZN7Globals14getIdxFromCharEc, symObjAddr: 0x94, symBinAddr: 0x17B44, symSize: 0x28 }
+  - { offsetInCU: 0x42C, offset: 0xA9B37, size: 0x8, addend: 0x0, symName: __ZN7Globals14getCharFromIdxEi, symObjAddr: 0xBC, symBinAddr: 0x17B6C, symSize: 0x124 }
+  - { offsetInCU: 0x45B, offset: 0xA9B66, size: 0x8, addend: 0x0, symName: __ZN7Globals21getFreqFromIdxAudibleEifi, symObjAddr: 0x1E0, symBinAddr: 0x17C90, symSize: 0x44 }
+  - { offsetInCU: 0x4E6, offset: 0xA9BF1, size: 0x8, addend: 0x0, symName: __ZN7Globals24getFreqFromIdxNonAudibleEifi, symObjAddr: 0x224, symBinAddr: 0x17CD4, symSize: 0x44 }
+  - { offsetInCU: 0x571, offset: 0xA9C7C, size: 0x8, addend: 0x0, symName: __ZN7Globals30getIdxsFromIdxAudibleMultiToneEiPPi, symObjAddr: 0x268, symBinAddr: 0x17D18, symSize: 0x2E4 }
+  - { offsetInCU: 0x5A8, offset: 0xA9CB3, size: 0x8, addend: 0x0, symName: __ZN7Globals40getIdxTokenFromIdxsTonesAudibleMultiToneEii, symObjAddr: 0x54C, symBinAddr: 0x17FFC, symSize: 0x5BC }
+  - { offsetInCU: 0x5E5, offset: 0xA9CF0, size: 0x8, addend: 0x0, symName: __ZN7Globals33getIdxsFromIdxNonAudibleMultiToneEiPPi, symObjAddr: 0xB08, symBinAddr: 0x185B8, symSize: 0x2E4 }
+  - { offsetInCU: 0x61F, offset: 0xA9D2A, size: 0x8, addend: 0x0, symName: __ZN7Globals34getIdxsFromIdxCompressionMultiToneEiPPi, symObjAddr: 0xDEC, symBinAddr: 0x1889C, symSize: 0x2E4 }
+  - { offsetInCU: 0x659, offset: 0xA9D64, size: 0x8, addend: 0x0, symName: __ZN7Globals29getIdxsFromIdxCustomMultiToneEiPPi, symObjAddr: 0x10D0, symBinAddr: 0x18B80, symSize: 0x2E4 }
+  - { offsetInCU: 0x693, offset: 0xA9D9E, size: 0x8, addend: 0x0, symName: __ZN7Globals43getIdxTokenFromIdxsTonesNonAudibleMultiToneEii, symObjAddr: 0x13B4, symBinAddr: 0x18E64, symSize: 0x5BC }
+  - { offsetInCU: 0x6D3, offset: 0xA9DDE, size: 0x8, addend: 0x0, symName: __ZN7Globals44getIdxTokenFromIdxsTonesCompressionMultiToneEii, symObjAddr: 0x1970, symBinAddr: 0x19420, symSize: 0x5BC }
+  - { offsetInCU: 0x713, offset: 0xA9E1E, size: 0x8, addend: 0x0, symName: __ZN7Globals39getIdxTokenFromIdxsTonesCustomMultiToneEii, symObjAddr: 0x1F2C, symBinAddr: 0x199DC, symSize: 0x5BC }
+  - { offsetInCU: 0x7CE, offset: 0xA9ED9, size: 0x8, addend: 0x0, symName: __ZN7Globals31getFreqsFromIdxAudibleMultiToneEifiPPf, symObjAddr: 0x24E8, symBinAddr: 0x19F98, symSize: 0xD0 }
+  - { offsetInCU: 0x8B1, offset: 0xA9FBC, size: 0x8, addend: 0x0, symName: __ZN7Globals30getToneFromIdxAudibleMultiToneEifi, symObjAddr: 0x25B8, symBinAddr: 0x1A068, symSize: 0x44 }
+  - { offsetInCU: 0x97D, offset: 0xAA088, size: 0x8, addend: 0x0, symName: __ZN7Globals34getFreqsFromIdxNonAudibleMultiToneEifiPPf, symObjAddr: 0x25FC, symBinAddr: 0x1A0AC, symSize: 0x104 }
+  - { offsetInCU: 0xAC5, offset: 0xAA1D0, size: 0x8, addend: 0x0, symName: __ZN7Globals33getToneFromIdxNonAudibleMultiToneEifi, symObjAddr: 0x2700, symBinAddr: 0x1A1B0, symSize: 0x60 }
+  - { offsetInCU: 0xB91, offset: 0xAA29C, size: 0x8, addend: 0x0, symName: __ZN7Globals35getFreqsFromIdxCompressionMultiToneEifiPPf, symObjAddr: 0x2760, symBinAddr: 0x1A210, symSize: 0x104 }
+  - { offsetInCU: 0xCD9, offset: 0xAA3E4, size: 0x8, addend: 0x0, symName: __ZN7Globals34getToneFromIdxCompressionMultiToneEifi, symObjAddr: 0x2864, symBinAddr: 0x1A314, symSize: 0x60 }
+  - { offsetInCU: 0xDA5, offset: 0xAA4B0, size: 0x8, addend: 0x0, symName: __ZN7Globals30getFreqsFromIdxCustomMultiToneEifiPPf, symObjAddr: 0x28C4, symBinAddr: 0x1A374, symSize: 0x11C }
+  - { offsetInCU: 0xEF1, offset: 0xAA5FC, size: 0x8, addend: 0x0, symName: __ZN7Globals29getToneFromIdxCustomMultiToneEifi, symObjAddr: 0x29E0, symBinAddr: 0x1A490, symSize: 0x58 }
+  - { offsetInCU: 0xF42, offset: 0xAA64D, size: 0x8, addend: 0x0, symName: __ZN7Globals18getLoudnessFromIdxEi, symObjAddr: 0x2A38, symBinAddr: 0x1A4E8, symSize: 0x34 }
+  - { offsetInCU: 0xF92, offset: 0xAA69D, size: 0x8, addend: 0x0, symName: __ZN7Globals34getLoudnessAudibleMultiToneFromIdxEiPPf, symObjAddr: 0x2A6C, symBinAddr: 0x1A51C, symSize: 0xD0 }
+  - { offsetInCU: 0x100F, offset: 0xAA71A, size: 0x8, addend: 0x0, symName: __ZN7Globals37getLoudnessNonAudibleMultiToneFromIdxEiPPf, symObjAddr: 0x2B3C, symBinAddr: 0x1A5EC, symSize: 0x90 }
+  - { offsetInCU: 0x107B, offset: 0xAA786, size: 0x8, addend: 0x0, symName: __ZN7Globals38getLoudnessCompressionMultiToneFromIdxEiPPf, symObjAddr: 0x2BCC, symBinAddr: 0x1A67C, symSize: 0x90 }
+  - { offsetInCU: 0x10E7, offset: 0xAA7F2, size: 0x8, addend: 0x0, symName: __ZN7Globals33getLoudnessCustomMultiToneFromIdxEiPPf, symObjAddr: 0x2C5C, symBinAddr: 0x1A70C, symSize: 0x90 }
+  - { offsetInCU: 0x1153, offset: 0xAA85E, size: 0x8, addend: 0x0, symName: __ZN7Globals21getMusicalNoteFromIdxEi, symObjAddr: 0x2CEC, symBinAddr: 0x1A79C, symSize: 0x2C }
+  - { offsetInCU: 0x11C2, offset: 0xAA8CD, size: 0x8, addend: 0x0, symName: __ZN7Globals8maxValueEPfi, symObjAddr: 0x2D18, symBinAddr: 0x1A7C8, symSize: 0x30 }
+  - { offsetInCU: 0x1222, offset: 0xAA92D, size: 0x8, addend: 0x0, symName: __ZN7Globals8maxValueEPii, symObjAddr: 0x2D48, symBinAddr: 0x1A7F8, symSize: 0x8C }
+  - { offsetInCU: 0x12D8, offset: 0xAA9E3, size: 0x8, addend: 0x0, symName: __ZN7Globals11secondValueEPfi, symObjAddr: 0x2DD4, symBinAddr: 0x1A884, symSize: 0x84 }
+  - { offsetInCU: 0x134E, offset: 0xAAA59, size: 0x8, addend: 0x0, symName: __ZN7Globals11secondValueEPfi, symObjAddr: 0x2DD4, symBinAddr: 0x1A884, symSize: 0x84 }
+  - { offsetInCU: 0x1394, offset: 0xAAA9F, size: 0x8, addend: 0x0, symName: __ZN7Globals11maxValueIdxEPfi, symObjAddr: 0x2E58, symBinAddr: 0x1A908, symSize: 0x44 }
+  - { offsetInCU: 0x13D9, offset: 0xAAAE4, size: 0x8, addend: 0x0, symName: __ZN7Globals11maxValueIdxEPii, symObjAddr: 0x2E9C, symBinAddr: 0x1A94C, symSize: 0x44 }
+  - { offsetInCU: 0x141E, offset: 0xAAB29, size: 0x8, addend: 0x0, symName: __ZN7Globals14secondValueIdxEPfi, symObjAddr: 0x2EE0, symBinAddr: 0x1A990, symSize: 0xAC }
+  - { offsetInCU: 0x1537, offset: 0xAAC42, size: 0x8, addend: 0x0, symName: __ZN7Globals14secondValueIdxEPii, symObjAddr: 0x2F8C, symBinAddr: 0x1AA3C, symSize: 0xA8 }
+  - { offsetInCU: 0x15FC, offset: 0xAAD07, size: 0x8, addend: 0x0, symName: __ZN7Globals3sumEPfi, symObjAddr: 0x3034, symBinAddr: 0x1AAE4, symSize: 0x2C }
+  - { offsetInCU: 0x164C, offset: 0xAAD57, size: 0x8, addend: 0x0, symName: __ZN7Globals3sumEPfi, symObjAddr: 0x3034, symBinAddr: 0x1AAE4, symSize: 0x2C }
+  - { offsetInCU: 0x166D, offset: 0xAAD78, size: 0x8, addend: 0x0, symName: __ZN7Globals10square_sumEPfi, symObjAddr: 0x3060, symBinAddr: 0x1AB10, symSize: 0x30 }
+  - { offsetInCU: 0x16BD, offset: 0xAADC8, size: 0x8, addend: 0x0, symName: __ZN7Globals10square_sumEPfi, symObjAddr: 0x3060, symBinAddr: 0x1AB10, symSize: 0x30 }
+  - { offsetInCU: 0x16DE, offset: 0xAADE9, size: 0x8, addend: 0x0, symName: __ZN7Globals4meanEPfi, symObjAddr: 0x3090, symBinAddr: 0x1AB40, symSize: 0x3C }
+  - { offsetInCU: 0x172E, offset: 0xAAE39, size: 0x8, addend: 0x0, symName: __ZN7Globals4meanEPfi, symObjAddr: 0x3090, symBinAddr: 0x1AB40, symSize: 0x3C }
+  - { offsetInCU: 0x174F, offset: 0xAAE5A, size: 0x8, addend: 0x0, symName: __ZN7Globals18standard_deviationEPfi, symObjAddr: 0x30CC, symBinAddr: 0x1AB7C, symSize: 0x6C }
+  - { offsetInCU: 0x17DB, offset: 0xAAEE6, size: 0x8, addend: 0x0, symName: __ZN7Globals18standard_deviationEPffi, symObjAddr: 0x3138, symBinAddr: 0x1ABE8, symSize: 0x4C }
+  - { offsetInCU: 0x183C, offset: 0xAAF47, size: 0x8, addend: 0x0, symName: __ZN7Globals18standard_deviationEPffi, symObjAddr: 0x3138, symBinAddr: 0x1ABE8, symSize: 0x4C }
+  - { offsetInCU: 0x26, offset: 0xAB061, size: 0x8, addend: 0x0, symName: _OXY_Create, symObjAddr: 0x0, symBinAddr: 0x1AC34, symSize: 0x1C }
+  - { offsetInCU: 0x34, offset: 0xAB06F, size: 0x8, addend: 0x0, symName: _OXY_GetVersion, symObjAddr: 0x68, symBinAddr: 0x1AC9C, symSize: 0xC }
+  - { offsetInCU: 0x5A, offset: 0xAB095, size: 0x8, addend: 0x0, symName: __ZZ14OXY_GetVersionE7version, symObjAddr: 0x709, symBinAddr: 0x2598E, symSize: 0x0 }
+  - { offsetInCU: 0x8C, offset: 0xAB0C7, size: 0x8, addend: 0x0, symName: __ZL7version, symObjAddr: 0x6A5, symBinAddr: 0x21E9D, symSize: 0x0 }
+  - { offsetInCU: 0x3617, offset: 0xAE652, size: 0x8, addend: 0x0, symName: _OXY_Create, symObjAddr: 0x0, symBinAddr: 0x1AC34, symSize: 0x1C }
+  - { offsetInCU: 0x365C, offset: 0xAE697, size: 0x8, addend: 0x0, symName: _OXY_Destroy, symObjAddr: 0x1C, symBinAddr: 0x1AC50, symSize: 0x4C }
+  - { offsetInCU: 0x36C1, offset: 0xAE6FC, size: 0x8, addend: 0x0, symName: __ZN8COxyCoreD2Ev, symObjAddr: 0x56C, symBinAddr: 0x1B1A0, symSize: 0x6C }
+  - { offsetInCU: 0x36EC, offset: 0xAE727, size: 0x8, addend: 0x0, symName: _OXY_GetVersionInfo, symObjAddr: 0x74, symBinAddr: 0x1ACA8, symSize: 0x2C }
+  - { offsetInCU: 0x3717, offset: 0xAE752, size: 0x8, addend: 0x0, symName: _OXY_Configure, symObjAddr: 0xA0, symBinAddr: 0x1ACD4, symSize: 0x2A4 }
+  - { offsetInCU: 0x3782, offset: 0xAE7BD, size: 0x8, addend: 0x0, symName: _OXY_SetAudioSignature, symObjAddr: 0x344, symBinAddr: 0x1AF78, symSize: 0x14 }
+  - { offsetInCU: 0x37DD, offset: 0xAE818, size: 0x8, addend: 0x0, symName: _OXY_EncodeDataToAudioBuffer, symObjAddr: 0x358, symBinAddr: 0x1AF8C, symSize: 0x24 }
+  - { offsetInCU: 0x389D, offset: 0xAE8D8, size: 0x8, addend: 0x0, symName: _OXY_GetEncodedAudioBuffer, symObjAddr: 0x37C, symBinAddr: 0x1AFB0, symSize: 0x10 }
+  - { offsetInCU: 0x38E8, offset: 0xAE923, size: 0x8, addend: 0x0, symName: _OXY_ResetEncodedAudioBuffer, symObjAddr: 0x38C, symBinAddr: 0x1AFC0, symSize: 0x8 }
+  - { offsetInCU: 0x3923, offset: 0xAE95E, size: 0x8, addend: 0x0, symName: _OXY_DecodeAudioBuffer, symObjAddr: 0x394, symBinAddr: 0x1AFC8, symSize: 0x1C }
+  - { offsetInCU: 0x399B, offset: 0xAE9D6, size: 0x8, addend: 0x0, symName: _OXY_GetDecodedData, symObjAddr: 0x3B0, symBinAddr: 0x1AFE4, symSize: 0x18 }
+  - { offsetInCU: 0x39FB, offset: 0xAEA36, size: 0x8, addend: 0x0, symName: _OXY_GetConfidenceError, symObjAddr: 0x3C8, symBinAddr: 0x1AFFC, symSize: 0x8 }
+  - { offsetInCU: 0x3A36, offset: 0xAEA71, size: 0x8, addend: 0x0, symName: _OXY_GetConfidenceNoise, symObjAddr: 0x3D0, symBinAddr: 0x1B004, symSize: 0x8 }
+  - { offsetInCU: 0x3A74, offset: 0xAEAAF, size: 0x8, addend: 0x0, symName: _OXY_GetConfidence, symObjAddr: 0x3D8, symBinAddr: 0x1B00C, symSize: 0x8 }
+  - { offsetInCU: 0x3AB2, offset: 0xAEAED, size: 0x8, addend: 0x0, symName: _OXY_GetReceivedOxysVolume, symObjAddr: 0x3E0, symBinAddr: 0x1B014, symSize: 0x8 }
+  - { offsetInCU: 0x3AF0, offset: 0xAEB2B, size: 0x8, addend: 0x0, symName: _OXY_GetDecodedMode, symObjAddr: 0x3E8, symBinAddr: 0x1B01C, symSize: 0x8 }
+  - { offsetInCU: 0x3B2E, offset: 0xAEB69, size: 0x8, addend: 0x0, symName: _OXY_GetSpectrum, symObjAddr: 0x3F0, symBinAddr: 0x1B024, symSize: 0x10 }
+  - { offsetInCU: 0x3B7D, offset: 0xAEBB8, size: 0x8, addend: 0x0, symName: _OXY_SetCustomBaseFreq, symObjAddr: 0x400, symBinAddr: 0x1B034, symSize: 0x124 }
+  - { offsetInCU: 0x3BDD, offset: 0xAEC18, size: 0x8, addend: 0x0, symName: _OXY_GetDecodingBeginFreq, symObjAddr: 0x524, symBinAddr: 0x1B158, symSize: 0x10 }
+  - { offsetInCU: 0x3C27, offset: 0xAEC62, size: 0x8, addend: 0x0, symName: _OXY_GetDecodingEndFreq, symObjAddr: 0x534, symBinAddr: 0x1B168, symSize: 0x10 }
+  - { offsetInCU: 0x3C71, offset: 0xAECAC, size: 0x8, addend: 0x0, symName: _OXY_SetSynthMode, symObjAddr: 0x544, symBinAddr: 0x1B178, symSize: 0x14 }
+  - { offsetInCU: 0x3CBC, offset: 0xAECF7, size: 0x8, addend: 0x0, symName: _OXY_SetSynthVolume, symObjAddr: 0x558, symBinAddr: 0x1B18C, symSize: 0x14 }
+  - { offsetInCU: 0x26, offset: 0xAED6B, size: 0x8, addend: 0x0, symName: __ZN3OXY11ReedSolomonC2Ev, symObjAddr: 0x0, symBinAddr: 0x1B20C, symSize: 0x3B0 }
+  - { offsetInCU: 0xC93, offset: 0xAF9D8, size: 0x8, addend: 0x0, symName: __ZNSt3__1L20__throw_length_errorEPKc, symObjAddr: 0x1830, symBinAddr: 0x1CA3C, symSize: 0x4C }
+  - { offsetInCU: 0x15C4, offset: 0xB0309, size: 0x8, addend: 0x0, symName: __ZN3OXY11ReedSolomonC2Ev, symObjAddr: 0x0, symBinAddr: 0x1B20C, symSize: 0x3B0 }
+  - { offsetInCU: 0x1670, offset: 0xB03B5, size: 0x8, addend: 0x0, symName: __ZN3OXY11ReedSolomon19GenerateGaloisFieldEv, symObjAddr: 0x3B0, symBinAddr: 0x1B5BC, symSize: 0xE4 }
+  - { offsetInCU: 0x16A5, offset: 0xB03EA, size: 0x8, addend: 0x0, symName: __ZN3OXY11ReedSolomon12GeneratePolyEv, symObjAddr: 0x494, symBinAddr: 0x1B6A0, symSize: 0x120 }
+  - { offsetInCU: 0x16DA, offset: 0xB041F, size: 0x8, addend: 0x0, symName: __ZN3OXY11ReedSolomonC1Ev, symObjAddr: 0x5B4, symBinAddr: 0x1B7C0, symSize: 0x4 }
+  - { offsetInCU: 0x1708, offset: 0xB044D, size: 0x8, addend: 0x0, symName: __ZN3OXY11ReedSolomonC1Ev, symObjAddr: 0x5B4, symBinAddr: 0x1B7C0, symSize: 0x4 }
+  - { offsetInCU: 0x171C, offset: 0xB0461, size: 0x8, addend: 0x0, symName: __ZN3OXY11ReedSolomonD2Ev, symObjAddr: 0x5B8, symBinAddr: 0x1B7C4, symSize: 0x140 }
+  - { offsetInCU: 0x1760, offset: 0xB04A5, size: 0x8, addend: 0x0, symName: __ZN3OXY11ReedSolomonD1Ev, symObjAddr: 0x6F8, symBinAddr: 0x1B904, symSize: 0x4 }
+  - { offsetInCU: 0x178E, offset: 0xB04D3, size: 0x8, addend: 0x0, symName: __ZN3OXY11ReedSolomonD1Ev, symObjAddr: 0x6F8, symBinAddr: 0x1B904, symSize: 0x4 }
+  - { offsetInCU: 0x17A2, offset: 0xB04E7, size: 0x8, addend: 0x0, symName: __ZN3OXY11ReedSolomon6EncodeEv, symObjAddr: 0x6FC, symBinAddr: 0x1B908, symSize: 0x16C }
+  - { offsetInCU: 0x17F9, offset: 0xB053E, size: 0x8, addend: 0x0, symName: __ZN3OXY11ReedSolomon6DecodeEv, symObjAddr: 0x868, symBinAddr: 0x1BA74, symSize: 0xAD8 }
+  - { offsetInCU: 0x189B, offset: 0xB05E0, size: 0x8, addend: 0x0, symName: __ZN3OXY11ReedSolomon10SetMessageENSt3__16vectorIiNS1_9allocatorIiEEEE, symObjAddr: 0x1340, symBinAddr: 0x1C54C, symSize: 0x68 }
+  - { offsetInCU: 0x1E18, offset: 0xB0B5D, size: 0x8, addend: 0x0, symName: __ZN3OXY11ReedSolomon7GetCodeERNSt3__16vectorIiNS1_9allocatorIiEEEE, symObjAddr: 0x13A8, symBinAddr: 0x1C5B4, symSize: 0x208 }
+  - { offsetInCU: 0x28D1, offset: 0xB1616, size: 0x8, addend: 0x0, symName: __ZN3OXY11ReedSolomon7SetCodeENSt3__16vectorIiNS1_9allocatorIiEEEE, symObjAddr: 0x15B0, symBinAddr: 0x1C7BC, symSize: 0x144 }
+  - { offsetInCU: 0x28DC, offset: 0xB1621, size: 0x8, addend: 0x0, symName: __ZN3OXY11ReedSolomon7SetCodeENSt3__16vectorIiNS1_9allocatorIiEEEE, symObjAddr: 0x15B0, symBinAddr: 0x1C7BC, symSize: 0x144 }
+  - { offsetInCU: 0x2988, offset: 0xB16CD, size: 0x8, addend: 0x0, symName: __ZN3OXY11ReedSolomon10GetMessageERNSt3__16vectorIiNS1_9allocatorIiEEEE, symObjAddr: 0x16F4, symBinAddr: 0x1C900, symSize: 0x13C }
+  - { offsetInCU: 0x2EED, offset: 0xB1C32, size: 0x8, addend: 0x0, symName: __ZNSt3__1L20__throw_length_errorEPKc, symObjAddr: 0x1830, symBinAddr: 0x1CA3C, symSize: 0x4C }
+  - { offsetInCU: 0x2EF8, offset: 0xB1C3D, size: 0x8, addend: 0x0, symName: __ZNSt12length_errorC1EPKc, symObjAddr: 0x187C, symBinAddr: 0x1CA88, symSize: 0x2C }
+  - { offsetInCU: 0x26, offset: 0xB1CEF, size: 0x8, addend: 0x0, symName: __ZN3OXY16SpectralAnalysisC2ENS_4ModeEiii, symObjAddr: 0x0, symBinAddr: 0x1CAB4, symSize: 0x1F0 }
+  - { offsetInCU: 0x13A5, offset: 0xB306E, size: 0x8, addend: 0x0, symName: __ZN3OXY16SpectralAnalysisC2ENS_4ModeEiii, symObjAddr: 0x0, symBinAddr: 0x1CAB4, symSize: 0x1F0 }
+  - { offsetInCU: 0x14B0, offset: 0xB3179, size: 0x8, addend: 0x0, symName: __ZN3OXY16SpectralAnalysisC1ENS_4ModeEiii, symObjAddr: 0x1F0, symBinAddr: 0x1CCA4, symSize: 0x4 }
+  - { offsetInCU: 0x151E, offset: 0xB31E7, size: 0x8, addend: 0x0, symName: __ZN3OXY16SpectralAnalysisC1ENS_4ModeEiii, symObjAddr: 0x1F0, symBinAddr: 0x1CCA4, symSize: 0x4 }
+  - { offsetInCU: 0x1552, offset: 0xB321B, size: 0x8, addend: 0x0, symName: __ZN3OXY16SpectralAnalysisD2Ev, symObjAddr: 0x1F4, symBinAddr: 0x1CCA8, symSize: 0x5C }
+  - { offsetInCU: 0x1591, offset: 0xB325A, size: 0x8, addend: 0x0, symName: __ZN3OXY16SpectralAnalysisD1Ev, symObjAddr: 0x250, symBinAddr: 0x1CD04, symSize: 0x5C }
+  - { offsetInCU: 0x16D5, offset: 0xB339E, size: 0x8, addend: 0x0, symName: __ZN3OXY16SpectralAnalysis5doFFTEPfS1_S1_, symObjAddr: 0x2AC, symBinAddr: 0x1CD60, symSize: 0x46C }
+  - { offsetInCU: 0x1963, offset: 0xB362C, size: 0x8, addend: 0x0, symName: __ZN9CFFTOoura7cftfsubEiPf, symObjAddr: 0x718, symBinAddr: 0x1D1CC, symSize: 0x304 }
+  - { offsetInCU: 0x1D18, offset: 0xB39E1, size: 0x8, addend: 0x0, symName: __ZN9CFFTOoura7rftfsubEiPf, symObjAddr: 0xA1C, symBinAddr: 0x1D4D0, symSize: 0x25C }
+  - { offsetInCU: 0x2288, offset: 0xB3F51, size: 0x8, addend: 0x0, symName: __ZN9CFFTOoura7cftmdl1EiPf, symObjAddr: 0xC78, symBinAddr: 0x1D72C, symSize: 0x75C }
+  - { offsetInCU: 0x2505, offset: 0xB41CE, size: 0x8, addend: 0x0, symName: __ZN9CFFTOoura7cftrec4EiPf, symObjAddr: 0x13D4, symBinAddr: 0x1DE88, symSize: 0x174 }
+  - { offsetInCU: 0x26AB, offset: 0xB4374, size: 0x8, addend: 0x0, symName: __ZN9CFFTOoura7cftf161EPf, symObjAddr: 0x3094, symBinAddr: 0x1FB48, symSize: 0x3D4 }
+  - { offsetInCU: 0x29BD, offset: 0xB4686, size: 0x8, addend: 0x0, symName: __ZN9CFFTOoura7cftleafEiiPf, symObjAddr: 0x1548, symBinAddr: 0x1DFFC, symSize: 0x10C4 }
+  - { offsetInCU: 0x3A54, offset: 0xB571D, size: 0x8, addend: 0x0, symName: __ZN9CFFTOoura7cftfx41EiPf, symObjAddr: 0x260C, symBinAddr: 0x1F0C0, symSize: 0x444 }
+  - { offsetInCU: 0x3E9A, offset: 0xB5B63, size: 0x8, addend: 0x0, symName: __ZN9CFFTOoura6bitrv2EiPf, symObjAddr: 0x2A50, symBinAddr: 0x1F504, symSize: 0x644 }
+  - { offsetInCU: 0x4052, offset: 0xB5D1B, size: 0x8, addend: 0x0, symName: __ZN9CFFTOoura7cftmdl2EiPf, symObjAddr: 0x3468, symBinAddr: 0x1FF1C, symSize: 0x998 }
+  - { offsetInCU: 0x43B0, offset: 0xB6079, size: 0x8, addend: 0x0, symName: __ZN9CFFTOoura7cftf162EPf, symObjAddr: 0x3E00, symBinAddr: 0x208B4, symSize: 0x4E0 }
+  - { offsetInCU: 0x46E8, offset: 0xB63B1, size: 0x8, addend: 0x0, symName: __ZN9CFFTOoura7cftf082EPf, symObjAddr: 0x42E0, symBinAddr: 0x20D94, symSize: 0x1B8 }
+...
