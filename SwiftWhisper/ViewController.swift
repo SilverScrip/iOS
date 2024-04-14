@@ -14,6 +14,28 @@ class ViewController: UIViewController, oxyDelegate  {
     
     var pOxy_str = ""
     
+    let myLabel = UILabel()
+    
+    private func setupLabel() {
+            myLabel.text = "Waiting to sync!"
+            myLabel.textAlignment = .center
+            myLabel.translatesAutoresizingMaskIntoConstraints = false
+            view.addSubview(myLabel)
+
+            NSLayoutConstraint.activate([
+                myLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+                myLabel.bottomAnchor.constraint(equalTo: recordButton.topAnchor, constant: -20), // Adjust the constant as needed
+                myLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),  // Added leading constraint
+                myLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20) // Added trailing constraint
+            ])
+        }
+    
+    private func startFlashingLabel() {
+            UIView.animate(withDuration: 0.5, delay: 0, options: [.repeat, .autoreverse, .allowUserInteraction], animations: {
+                self.myLabel.alpha = 0
+            }, completion: nil)
+        }
+    
     private lazy var recordButton: UIButton = {
         let button = UIButton(type: .custom)
         
@@ -116,7 +138,8 @@ class ViewController: UIViewController, oxyDelegate  {
         // Configure capture session
                 configureCaptureSession()
         
-        
+        setupLabel()
+        startFlashingLabel()
     }
     
     @IBAction func offon(_ sender: Any) {
@@ -291,8 +314,16 @@ class ViewController: UIViewController, oxyDelegate  {
                 self.pOxy_str = oxy_id!
                 //continue listening for other id_ but not BAD or nil
                 
+                self.applyColorChangingEffect()
+                
                 // Play audio
                 self.audioProcessing.player.play()
+                
+                
+                // Start recording
+                let popupVC = ColourViewController()
+                popupVC.modalPresentationStyle = .overFullScreen
+                self.present(popupVC, animated: true, completion: nil)
             }
             
         }
@@ -382,7 +413,13 @@ class ViewController: UIViewController, oxyDelegate  {
                 print("Error setting up capture session: \(error.localizedDescription)")
             }
         }
-
+    
+    func applyColorChangingEffect() {
+        // Animate the background color change of the view
+        UIView.animate(withDuration: 5.0, delay: 0, options: [.autoreverse, .repeat], animations: {
+            self.view.backgroundColor = self.random() // Change to a random color
+        }, completion: nil)
+    }
         
     @objc private func recordButtonTapped() {
         if movieOutput.isRecording {
@@ -550,61 +587,6 @@ class PopupViewController: UIViewController {
 }
 
 
-
-class FloatingTileCard: UIView {
-    // MARK: - Properties
-    
-    // Customize these properties as needed
-    let cornerRadius: CGFloat = 10
-    let shadowOpacity: Float = 0.4
-    let shadowRadius: CGFloat = 5
-    let shadowOffset = CGSize(width: 0, height: 4)
-    
-    // MARK: - Initialization
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        configureView()
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        configureView()
-    }
-    
-    // MARK: - Setup
-    
-    private func configureView() {
-        // Add shadow and corner radius
-        layer.cornerRadius = cornerRadius
-        layer.shadowColor = UIColor.black.cgColor
-        layer.shadowOpacity = shadowOpacity
-        layer.shadowRadius = shadowRadius
-        layer.shadowOffset = shadowOffset
-        
-        // Add any other customization
-        backgroundColor = .white
-    }
-    
-    // MARK: - Animation
-    
-    func show() {
-        // Implement animation to show the card
-        UIView.animate(withDuration: 0.3) {
-            self.alpha = 1.0
-            // Add any other animation properties
-        }
-    }
-    
-    func hide() {
-        // Implement animation to hide the card
-        UIView.animate(withDuration: 0.3) {
-            self.alpha = 0.0
-            // Add any other animation properties
-        }
-    }
-}
-
 class RecordViewController: UIViewController {
     var countdownLabel: UILabel!
     var countdownTimer: Timer?
@@ -650,6 +632,96 @@ class RecordViewController: UIViewController {
 }
 
 
+//MARK
+
+class ColourViewController: UIViewController {
+    var countdownLabel: UILabel!
+    var countdownTimer: Timer?
+    var colorChangeTimer: Timer?
+    var countdownValue = 4
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // Initial random background color
+        view.backgroundColor = getRandomColor()
+        
+        // Create countdown label
+        countdownLabel = UILabel()
+        countdownLabel.textColor = .black
+        countdownLabel.font = UIFont.systemFont(ofSize: 40, weight: .bold)
+        countdownLabel.textAlignment = .center
+        countdownLabel.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(countdownLabel)
+        
+        // Add constraints to the countdown label
+        NSLayoutConstraint.activate([
+            countdownLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            countdownLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+        ])
+        
+        // Setup timer to change background color every few seconds
+        colorChangeTimer = Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(changeBackgroundColor), userInfo: nil, repeats: true)
+        
+        let logoImageView = UIImageView(image: UIImage(named: "Image"))
+        
+        // Set the size of the logo
+        let logoSize = CGSize(width: 150, height: 150)
+        
+        // Calculate the position to center the logo horizontally and vertically
+        let centerX = view.bounds.midX - (logoSize.width / 2)
+        let centerY = view.bounds.midY - (logoSize.height / 2)
+        
+        // Set the frame of the logoImageView
+        logoImageView.frame = CGRect(x: centerX, y: centerY, width: logoSize.width, height: logoSize.height)
+        logoImageView.contentMode = .scaleAspectFit
+        
+        // Add logoImageView to the view
+        view.addSubview(logoImageView)
+        
+        // Create dismiss button
+                let dismissButton = UIButton(type: .system)
+                dismissButton.setTitle("Dismiss", for: .normal)
+                dismissButton.addTarget(self, action: #selector(dismissButtonTapped), for: .touchUpInside)
+                dismissButton.translatesAutoresizingMaskIntoConstraints = false  // Use Auto Layout
+                view.addSubview(dismissButton)
+
+                // Constraints for the dismiss button
+                NSLayoutConstraint.activate([
+                    dismissButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+                    dismissButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -40)  // 20 points from the bottom safe area
+                ])
+        
+    }
+    
+    @objc private func dismissButtonTapped() {
+        dismiss(animated: true, completion: nil)
+        
+        // Play audio
+        
+        let audioProcessing = AudioProcessing.shared
+        audioProcessing.player.stop()
+    }
+    
+    // Function to generate a random color
+    func getRandomColor() -> UIColor {
+        let red = CGFloat.random(in: 0...1)
+        let green = CGFloat.random(in: 0...1)
+        let blue = CGFloat.random(in: 0...1)
+        return UIColor(red: red, green: green, blue: blue, alpha: 1.0)
+    }
+    
+    // Selector function to change background color
+    @objc func changeBackgroundColor() {
+        UIView.animate(withDuration: 1) {
+            self.view.backgroundColor = self.getRandomColor()
+        }
+    }
+    
+    deinit {
+        colorChangeTimer?.invalidate()
+    }
+}
 
 
 // Extension to conform to AVCaptureFileOutputRecordingDelegate
