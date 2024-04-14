@@ -9,8 +9,7 @@
 /* Begin PBXBuildFile section */
 		04DA42F0A6C07D73F278E5E9 /* Pods_SwiftWhisper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A14CAA1792543982E3D2E890 /* Pods_SwiftWhisper.framework */; };
 		10605EAC2BBAC21B00E98B38 /* AudioProcessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10605EAB2BBAC21B00E98B38 /* AudioProcessing.swift */; };
-		10605EAE2BBAC22200E98B38 /* smormzout.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10605EAD2BBAC22200E98B38 /* smormzout.mp3 */; };
-		10605EB02BBACA4F00E98B38 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10605EAF2BBACA4F00E98B38 /* music.mp3 */; };
+		1085C1C22BCBD8E50062C56F /* storm.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1085C1C12BCBD8E50062C56F /* storm.wav */; };
 		D9D6FB37253F111500036C21 /* install.sh in Resources */ = {isa = PBXBuildFile; fileRef = D9D6FB36253F111500036C21 /* install.sh */; };
 		DF59B99A241416CE006F7FC9 /* ToastClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF59B999241416CD006F7FC9 /* ToastClass.swift */; };
 		DFBDB38723E58F1F00A63F37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBDB38623E58F1F00A63F37 /* AppDelegate.swift */; };
@@ -38,15 +37,14 @@
 /* Begin PBXFileReference section */
 		10605EA52BBA249200E98B38 /* aubio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = aubio.framework; path = Pods/aubio.framework; sourceTree = "<group>"; };
 		10605EAB2BBAC21B00E98B38 /* AudioProcessing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioProcessing.swift; sourceTree = "<group>"; };
-		10605EAD2BBAC22200E98B38 /* smormzout.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = smormzout.mp3; sourceTree = "<group>"; };
-		10605EAF2BBACA4F00E98B38 /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
+		1085C1C12BCBD8E50062C56F /* storm.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = storm.wav; sourceTree = "<group>"; };
 		7BDA7D27978162A3C14E5882 /* Pods-SwiftWhisper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftWhisper.debug.xcconfig"; path = "Target Support Files/Pods-SwiftWhisper/Pods-SwiftWhisper.debug.xcconfig"; sourceTree = "<group>"; };
 		A14CAA1792543982E3D2E890 /* Pods_SwiftWhisper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftWhisper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9D5480EDC9670B98FF5863A /* Pods-SwiftWhisper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftWhisper.release.xcconfig"; path = "Target Support Files/Pods-SwiftWhisper/Pods-SwiftWhisper.release.xcconfig"; sourceTree = "<group>"; };
 		D9D6FB36253F111500036C21 /* install.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = install.sh; sourceTree = "<group>"; };
 		DF0D9A9E24143A8800D8E62C /* OxySound.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OxySound.entitlements; sourceTree = "<group>"; };
 		DF59B999241416CD006F7FC9 /* ToastClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastClass.swift; sourceTree = "<group>"; };
-		DFBDB38323E58F1F00A63F37 /* OxySound Basic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OxySound Basic.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFBDB38323E58F1F00A63F37 /* Oxy Live.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Oxy Live.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFBDB38623E58F1F00A63F37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DFBDB38823E58F1F00A63F37 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DFBDB38A23E58F1F00A63F37 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,7 +98,7 @@
 		DFBDB38423E58F1F00A63F37 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DFBDB38323E58F1F00A63F37 /* OxySound Basic.app */,
+				DFBDB38323E58F1F00A63F37 /* Oxy Live.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,8 +106,7 @@
 		DFBDB38523E58F1F00A63F37 /* SwiftWhisper */ = {
 			isa = PBXGroup;
 			children = (
-				10605EAD2BBAC22200E98B38 /* smormzout.mp3 */,
-				10605EAF2BBACA4F00E98B38 /* music.mp3 */,
+				1085C1C12BCBD8E50062C56F /* storm.wav */,
 				D9D6FB36253F111500036C21 /* install.sh */,
 				DF0D9A9E24143A8800D8E62C /* OxySound.entitlements */,
 				DFBDB38623E58F1F00A63F37 /* AppDelegate.swift */,
@@ -146,7 +143,7 @@
 			);
 			name = SwiftWhisper;
 			productName = SwiftWhisper;
-			productReference = DFBDB38323E58F1F00A63F37 /* OxySound Basic.app */;
+			productReference = DFBDB38323E58F1F00A63F37 /* Oxy Live.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -188,10 +185,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFBDB39623E58F2200A63F37 /* LaunchScreen.storyboard in Resources */,
-				10605EAE2BBAC22200E98B38 /* smormzout.mp3 in Resources */,
 				DFBDB39323E58F2200A63F37 /* Assets.xcassets in Resources */,
 				DFBDB38E23E58F1F00A63F37 /* Main.storyboard in Resources */,
-				10605EB02BBACA4F00E98B38 /* music.mp3 in Resources */,
+				1085C1C22BCBD8E50062C56F /* storm.wav in Resources */,
 				D9D6FB37253F111500036C21 /* install.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,7 +415,7 @@
 				);
 				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = org.askquickly.oxyapp;
-				PRODUCT_NAME = "OxySound Basic";
+				PRODUCT_NAME = "Oxy Live";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -450,7 +446,7 @@
 				);
 				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.oxysound.events;
-				PRODUCT_NAME = "OxySound Basic";
+				PRODUCT_NAME = "Oxy Live";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

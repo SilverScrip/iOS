@@ -15,15 +15,21 @@
 	<key>CFBundlePackageType</key>
 	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>1.4.5</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSCameraUsageDescription</key>
-	<string>Camera access is required for a more immersive experience at events.</string>
+	<string>Camera info</string>
 	<key>NSMicrophoneUsageDescription</key>
-	<string>We need access to your microphone to capture audio broasted at the event we will decoding the message to provide a better event experience</string>
+	<string>Need to use mic to listen to the magic</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>To record live events</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>f</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

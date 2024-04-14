@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DFBDB38223E58F1F00A63F37"
-               BuildableName = "OxySound Basic.app"
+               BuildableName = "Oxy Live.app"
                BlueprintName = "SwiftWhisper"
                ReferencedContainer = "container:SwiftWhisper.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DFBDB38223E58F1F00A63F37"
-            BuildableName = "OxySound Basic.app"
+            BuildableName = "Oxy Live.app"
             BlueprintName = "SwiftWhisper"
             ReferencedContainer = "container:SwiftWhisper.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DFBDB38223E58F1F00A63F37"
-            BuildableName = "OxySound Basic.app"
+            BuildableName = "Oxy Live.app"
             BlueprintName = "SwiftWhisper"
             ReferencedContainer = "container:SwiftWhisper.xcodeproj">
          </BuildableReference>

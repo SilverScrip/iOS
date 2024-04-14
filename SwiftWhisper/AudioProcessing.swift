@@ -3,6 +3,8 @@ import Accelerate
 import UIKit
 
 class AudioProcessing {
+    
+    
     static var shared: AudioProcessing = .init()
     
     private let engine = AVAudioEngine()
@@ -16,13 +18,22 @@ class AudioProcessing {
     private let flashlightBeatThreshold: Float = 50.0 // Adjust as needed
     
     init() {
+        
+        // Set the audio session category
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.multiRoute)
+            try AVAudioSession.sharedInstance().setActive(true)
+        } catch {
+            print("Error setting audio session category: \(error)")
+        }
+        
         _ = engine.mainMixerNode
         
         engine.prepare()
         try! engine.start()
         
         let audioFile = try! AVAudioFile(
-            forReading: Bundle.main.url(forResource: "music", withExtension: "mp3")!
+            forReading: Bundle.main.url(forResource: "storm", withExtension: "wav")!
         )
         let format = audioFile.processingFormat
             

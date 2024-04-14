@@ -1,14 +1,36 @@
 import Oxy
 import AVFoundation
 import UIKit
+import Photos
 
 enum Constants {
     static let updateInterval = 0.03
     static let barAmount = 40
     static let magnitudeLimit: Float = 32
 }
- 
+
+
 class ViewController: UIViewController, oxyDelegate  {
+    
+    var pOxy_str = ""
+    
+    private lazy var recordButton: UIButton = {
+        let button = UIButton(type: .custom)
+        
+        // Set the image for normal state
+        let image = UIImage(named: "Record")
+        
+        button.setImage(image, for: .normal)
+        
+        // Add target and action
+        button.addTarget(self, action: #selector(recordButtonTapped), for: .touchUpInside)
+        
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
+
+    // Add AVCaptureMovieFileOutput to handle video recording
+    private let movieOutput = AVCaptureMovieFileOutput()
     
     @IBOutlet weak var onoff: UISwitch!
 
@@ -33,7 +55,7 @@ class ViewController: UIViewController, oxyDelegate  {
         
         oxyManager?.delegate=self
         //load()
-        loadCamera()
+        //loadCamera()
                 addLogo()
                 applyFadeEffect()
         // Start pulse animation
@@ -46,6 +68,55 @@ class ViewController: UIViewController, oxyDelegate  {
             popupVC.modalPresentationStyle = .overFullScreen
             self.present(popupVC, animated: true, completion: nil)
         }
+        
+        // Add the recordButton to the view
+                view.addSubview(recordButton)
+
+                // Add constraints for the recordButton
+                NSLayoutConstraint.activate([
+                    recordButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+                    recordButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -20),
+                    recordButton.widthAnchor.constraint(equalToConstant: 50),
+                    recordButton.heightAnchor.constraint(equalToConstant: 50)
+                ])
+        
+        // Check if the app has permission to access the photo library
+                let status = PHPhotoLibrary.authorizationStatus()
+                
+                switch status {
+                case .authorized:
+                    // User has already granted permission
+                    print("User has already granted access to the photo library.")
+                case .denied, .restricted:
+                    // User has denied or restricted access to the photo library
+                    print("User has denied or restricted access to the photo library.")
+                case .notDetermined:
+                    // Request access to the photo library
+                    PHPhotoLibrary.requestAuthorization { status in
+                        switch status {
+                        case .authorized:
+                            // User has granted permission
+                            print("User has granted access to the photo library.")
+                        case .denied:
+                            // User has denied access
+                            print("User has denied access to the photo library.")
+                        case .restricted:
+                            // Parental controls restrict access to the photo library
+                            print("Access to photo library is restricted.")
+                        case .notDetermined:
+                            // User has not yet made a choice
+                            print("User has not yet made a choice regarding access to the photo library.")
+                        @unknown default:
+                            fatalError("Unexpected case when requesting photo library access authorization.")
+                        }
+                    }
+                @unknown default:
+                    fatalError("Unexpected case when checking photo library authorization status.")
+                }
+        // Configure capture session
+                configureCaptureSession()
+        
+        
     }
     
     @IBAction func offon(_ sender: Any) {
@@ -86,10 +157,57 @@ class ViewController: UIViewController, oxyDelegate  {
         previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
         previewLayer.videoGravity = .resizeAspectFill
         previewLayer.frame = view.bounds
+        // Set the opacity of the preview layer to 50%
         
+        previewLayer.backgroundColor = UIColor.systemBlue.cgColor
+        previewLayer.opacity = 1.7
+        
+       
         // Add previewLayer to your view's layer
         view.layer.addSublayer(previewLayer)
-        
+        /*
+        // Add grid overlay on top of the preview layer
+           let gridLayer = CAShapeLayer()
+           gridLayer.frame = previewLayer.bounds
+           
+           // Define the grid line spacing and thickness
+           let numberOfLines = 64
+           let lineWidth: CGFloat = 2.0
+           
+           // Create a path for vertical grid lines
+           let verticalPath = UIBezierPath()
+           let verticalSpacing = previewLayer.bounds.width / CGFloat(numberOfLines + 1)
+           for i in 1...numberOfLines {
+               let x = CGFloat(i) * verticalSpacing
+               verticalPath.move(to: CGPoint(x: x, y: 0))
+               verticalPath.addLine(to: CGPoint(x: x, y: previewLayer.bounds.height))
+           }
+           
+           // Create a path for horizontal grid lines
+           let horizontalPath = UIBezierPath()
+           let horizontalSpacing = previewLayer.bounds.height / CGFloat(numberOfLines + 1)
+           for i in 1...numberOfLines {
+               let y = CGFloat(i) * horizontalSpacing
+               horizontalPath.move(to: CGPoint(x: 0, y: y))
+               horizontalPath.addLine(to: CGPoint(x: previewLayer.bounds.width, y: y))
+           }
+           
+           // Combine vertical and horizontal paths
+           let gridPath = UIBezierPath()
+           gridPath.append(verticalPath)
+           gridPath.append(horizontalPath)
+           
+           // Set path properties
+           gridLayer.path = gridPath.cgPath
+           gridLayer.strokeColor = UIColor.black.cgColor
+           gridLayer.lineWidth = lineWidth
+           gridLayer.lineCap = .round
+           gridLayer.lineJoin = .round
+           
+           // Add grid layer to preview layer
+           previewLayer.addSublayer(gridLayer)
+       
+        */
         // Start the capture session
         captureSession.startRunning()
     }
@@ -122,6 +240,8 @@ class ViewController: UIViewController, oxyDelegate  {
     func startPulseAnimation() {
         let pulseCount = 3
         let animationDuration: CFTimeInterval = 3.0
+        _ = UIColor(red: CGFloat(3) / 255.0, green: CGFloat(141) / 255.0, blue: CGFloat(177) / 255.0, alpha: 0.4)
+        
         let pulseColor = UIColor.blue.cgColor
         
         for i in 0..<pulseCount {
@@ -160,32 +280,24 @@ class ViewController: UIViewController, oxyDelegate  {
     }
     //MARK: Still processing audio push to new thread
     
-    
-    func oxyId(with oxy_id: String!) {
-       
-   DispatchQueue.main.async {
-       
-       if(self.payload != oxy_id){
-            self.payload = oxy_id
-            self.tog = true
-           //self.oxyManager?.stop()
-           
-           self.audioProcessing.player.play()
-           print(self.payload)
-           self.showToast("Oxysound has stopped passing to audio beat function")
+    func oxyId(with oxy_id: String?) {
+        DispatchQueue.main.async {
+            // Check if oxy_id is not nil
+            
+                    
+            if let oxyId = oxy_id, oxyId != "BAD", oxyId != self.pOxy_str
+            {
+                
+                self.pOxy_str = oxy_id!
+                //continue listening for other id_ but not BAD or nil
+                
+                // Play audio
+                self.audioProcessing.player.play()
+            }
+            
         }
-       else if (oxy_id == "BAD")
-       {
-           print("bad")
-       }
-       else{
-           print(Constants.barAmount)
-           
-       }
-       
-      
-       }
-}
+    }
+
  
     func random() -> UIColor {
         return UIColor(red: .random(in: 0...1),
@@ -194,10 +306,7 @@ class ViewController: UIViewController, oxyDelegate  {
                        alpha: 1.0)
     }
 
-   
-    
 
-    
     func UIColorFromHex(rgbValue:UInt32, alpha:Double=1.0)->UIColor {
         let red = CGFloat((rgbValue & 0xFF0000) >> 16)/256.0
         let green = CGFloat((rgbValue & 0xFF00) >> 8)/256.0
@@ -245,7 +354,69 @@ class ViewController: UIViewController, oxyDelegate  {
         print("Button tapped!")
         showPopup()
     }
-}
+    
+    // Method to configure AVCaptureSession
+        private func configureCaptureSession() {
+            guard let camera = AVCaptureDevice.default(for: .video) else {
+                print("Unable to access camera.")
+                return
+            }
+
+            do {
+                let input = try AVCaptureDeviceInput(device: camera)
+                let session = AVCaptureSession()
+                session.addInput(input)
+
+                // Add movie output
+                if session.canAddOutput(movieOutput) {
+                    session.addOutput(movieOutput)
+                }
+
+                let previewLayer = AVCaptureVideoPreviewLayer(session: session)
+                previewLayer.videoGravity = .resizeAspectFill
+                previewLayer.frame = view.bounds
+                view.layer.insertSublayer(previewLayer, at: 0)
+
+                session.startRunning()
+            } catch {
+                print("Error setting up capture session: \(error.localizedDescription)")
+            }
+        }
+
+        
+    @objc private func recordButtonTapped() {
+        if movieOutput.isRecording {
+            // Stop recording
+            movieOutput.stopRecording()
+            recordButton.setTitle("Record", for: .normal)
+        } else {
+            // Start recording
+            let popupVC = RecordViewController()
+            popupVC.modalPresentationStyle = .overFullScreen
+            self.present(popupVC, animated: true, completion: nil)
+            
+            let outputPath = NSTemporaryDirectory() + "output.mov"
+            let outputURL = URL(fileURLWithPath: outputPath)
+            
+            // Check if file at outputURL already exists, if so, remove it
+            if FileManager.default.fileExists(atPath: outputPath) {
+                do {
+                    try FileManager.default.removeItem(at: outputURL)
+                } catch {
+                    print("Error removing existing file: \(error.localizedDescription)")
+                }
+            }
+            
+            // Start recording to the outputURL
+            movieOutput.startRecording(to: outputURL, recordingDelegate: self)
+            recordButton.setTitle("Stop", for: .normal)
+        }
+    }
+
+    
+    
+    
+    }
 class PopupViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -375,5 +546,156 @@ class PopupViewController: UIViewController {
         ])
         
         return stepContainer
+    }
+}
+
+
+
+class FloatingTileCard: UIView {
+    // MARK: - Properties
+    
+    // Customize these properties as needed
+    let cornerRadius: CGFloat = 10
+    let shadowOpacity: Float = 0.4
+    let shadowRadius: CGFloat = 5
+    let shadowOffset = CGSize(width: 0, height: 4)
+    
+    // MARK: - Initialization
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        configureView()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        configureView()
+    }
+    
+    // MARK: - Setup
+    
+    private func configureView() {
+        // Add shadow and corner radius
+        layer.cornerRadius = cornerRadius
+        layer.shadowColor = UIColor.black.cgColor
+        layer.shadowOpacity = shadowOpacity
+        layer.shadowRadius = shadowRadius
+        layer.shadowOffset = shadowOffset
+        
+        // Add any other customization
+        backgroundColor = .white
+    }
+    
+    // MARK: - Animation
+    
+    func show() {
+        // Implement animation to show the card
+        UIView.animate(withDuration: 0.3) {
+            self.alpha = 1.0
+            // Add any other animation properties
+        }
+    }
+    
+    func hide() {
+        // Implement animation to hide the card
+        UIView.animate(withDuration: 0.3) {
+            self.alpha = 0.0
+            // Add any other animation properties
+        }
+    }
+}
+
+class RecordViewController: UIViewController {
+    var countdownLabel: UILabel!
+    var countdownTimer: Timer?
+    var countdownValue = 4
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // Configure the view
+        view.backgroundColor = .white
+        
+        // Create countdown label
+        countdownLabel = UILabel()
+        countdownLabel.textColor = .black
+        countdownLabel.font = UIFont.systemFont(ofSize: 40, weight: .bold)
+        countdownLabel.textAlignment = .center
+        countdownLabel.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(countdownLabel)
+        
+        // Add constraints to the countdown label
+        NSLayoutConstraint.activate([
+            countdownLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            countdownLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+        ])
+        
+        // Start countdown timer
+        startCountdown()
+    }
+    
+    func startCountdown() {
+        countdownTimer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateCountdown), userInfo: nil, repeats: true)
+    }
+    
+    @objc func updateCountdown() {
+        countdownValue -= 1
+        if countdownValue > 0 {
+            countdownLabel.text = "\(countdownValue)"
+        } else {
+            countdownTimer?.invalidate()
+            dismiss(animated: true, completion: nil)
+        }
+    }
+}
+
+
+
+
+// Extension to conform to AVCaptureFileOutputRecordingDelegate
+extension ViewController: AVCaptureFileOutputRecordingDelegate {
+    func fileOutput(_ output: AVCaptureFileOutput, didFinishRecordingTo outputFileURL: URL, from connections: [AVCaptureConnection], error: Error?) {
+        if let error = error {
+            print("Error recording video: \(error.localizedDescription)")
+        } else {
+            print("Recording finished. Video saved at: \(outputFileURL)")
+            showToast(message: "Video saved to library.")
+
+            
+            // Request to save the video to the photo library
+            PHPhotoLibrary.shared().performChanges({
+                let options = PHAssetResourceCreationOptions()
+                options.shouldMoveFile = true // Move the file instead of copying
+                let creationRequest = PHAssetCreationRequest.forAsset()
+                creationRequest.addResource(with: .video, fileURL: outputFileURL, options: options)
+            }) { saved, error in
+                if let error = error {
+                    print("Error saving video to photo library: \(error.localizedDescription)")
+                } else {
+                    print("Video saved to photo library.")
+                }
+            }
+        }
+    }
+}
+
+
+extension UIViewController {
+    func showToast(message: String) {
+        let toastLabel = UILabel(frame: CGRect(x: self.view.frame.size.width/2 - 75, y: self.view.frame.size.height-100, width: 150, height: 35))
+        toastLabel.backgroundColor = UIColor.black.withAlphaComponent(0.6)
+        toastLabel.textColor = UIColor.white
+        toastLabel.textAlignment = .center;
+        toastLabel.font = UIFont.systemFont(ofSize: 12)
+        toastLabel.text = message
+        toastLabel.alpha = 1.0
+        toastLabel.layer.cornerRadius = 10;
+        toastLabel.clipsToBounds  =  true
+        self.view.addSubview(toastLabel)
+        UIView.animate(withDuration: 4.0, delay: 0.1, options: .curveEaseOut, animations: {
+            toastLabel.alpha = 0.0
+        }, completion: {(isCompleted) in
+            toastLabel.removeFromSuperview()
+        })
     }
 }
