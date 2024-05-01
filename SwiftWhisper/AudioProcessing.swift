@@ -33,7 +33,7 @@ class AudioProcessing {
         try! engine.start()
         
         let audioFile = try! AVAudioFile(
-            forReading: Bundle.main.url(forResource: "storm", withExtension: "wav")!
+            forReading: Bundle.main.url(forResource: "steel", withExtension: "mp3")!
         )
         let format = audioFile.processingFormat
             

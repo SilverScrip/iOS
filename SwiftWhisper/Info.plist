@@ -15,7 +15,7 @@
 	<key>CFBundlePackageType</key>
 	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.5</string>
+	<string>1.5.4</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>ITSAppUsesNonExemptEncryption</key>
@@ -23,13 +23,13 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSCameraUsageDescription</key>
-	<string>Camera info</string>
+	<string>Camera permission required to record live events.</string>
 	<key>NSMicrophoneUsageDescription</key>
-	<string>Need to use mic to listen to the magic</string>
+	<string>Need to use mic to listen to audio messages.</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
 	<string>To record live events</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>f</string>
+	<string>Photo permission required to store recorded live events.</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
